@@ -42,3 +42,34 @@ if (rev==n):
 else:
     print("false")
 ```
+# [GCD or HCF](https://www.codingninjas.com/studio/problems/hcf-and-lcm_840448?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+
+## Solution:
+```
+```
+
+# [Check Armstrong ](https://www.codingninjas.com/studio/problems/check-armstrong_589?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+
+## Solution:
+```
+n = int(input())
+temp1 = n
+temp2 = n
+pwr = 0
+armstrong_num = 0
+
+while temp1 != 0:
+    rem = temp1 % 10
+    pwr = pwr + 1
+    temp1 = temp1 // 10
+
+while temp2 != 0:
+    rem = temp2 % 10
+    armstrong_num = armstrong_num + rem**pwr
+    temp2 = temp2 // 10
+
+if (armstrong_num == n):
+    print("true")
+else:
+    print("false")
+```
