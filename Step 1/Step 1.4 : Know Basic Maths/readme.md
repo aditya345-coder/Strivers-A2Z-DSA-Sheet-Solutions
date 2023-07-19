@@ -26,3 +26,19 @@ def reverseBits(n):
 def reverseBits(n):
     return int(bin(n).replace('0b','').zfill(32)[::-1],2)
 ```
+# [Palindrome number](https://www.codingninjas.com/studio/problems/palindrome-number_624662?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+
+## Solution:
+```
+n=int(input()) 
+temp = n 
+rev = 0
+while temp !=0:
+    rem = temp % 10
+    rev = rev*10 + rem
+    temp= temp//10
+if (rev==n):
+    print("true")
+else:
+    print("false")
+```
