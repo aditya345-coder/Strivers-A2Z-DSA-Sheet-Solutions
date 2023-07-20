@@ -1,8 +1,7 @@
 # Patterns
 
 
-## [Pattern 12](https://practice.geeksforgeeks.org/problems/double-triangle-pattern-1662664259/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_12){.tabset .tabset-fade}
-
+## [Pattern 12](https://practice.geeksforgeeks.org/problems/double-triangle-pattern-1662664259/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_12)
 ```
 1                 1
 1 2             2 1
@@ -10,7 +9,7 @@
 1 2 3 4     4 3 2 1
 1 2 3 4 5 5 4 3 2 1
 ```
-### tab 1
+### title {.tabset .tabset-fade}
 ### Code:
 ```
 class Solution:
