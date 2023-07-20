@@ -23,7 +23,7 @@ class Solution:
             print()
 ```
 
-## Pattern 13
+## [Pattern 13](https://practice.geeksforgeeks.org/problems/triangle-pattern-1661718712/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_13)
 ```
 ```
 ### Code:
