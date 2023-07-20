@@ -1,4 +1,16 @@
 # Patterns
+## title {.tabset .tabset-fade}
+content above tabbed region.
+
+### tab 1 
+
+tab content 1
+
+### tab 2
+
+tab content 2
+
+##
 
 ## [Pattern 12](https://practice.geeksforgeeks.org/problems/double-triangle-pattern-1662664259/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_12)
 ```
