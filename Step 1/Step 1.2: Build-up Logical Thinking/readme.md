@@ -25,6 +25,11 @@ class Solution:
 
 ## [Pattern 13](https://practice.geeksforgeeks.org/problems/triangle-pattern-1661718712/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_13)
 ```
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15
 ```
 ### Code:
 ```
@@ -61,5 +66,39 @@ class Solution:
         for i in range(1, N+1):
             for j in range(97, 97+(N-i)+1):
                 print(chr(j).upper(),end="")
+            print()
+```
+## [Pattern 16](https://practice.geeksforgeeks.org/problems/triangle-pattern-1662285334/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_16)
+```
+A
+BB
+CCC
+DDDD
+EEEEE
+```
+### Code:
+```
+
+```
+
+## [Pattern 17](https://practice.geeksforgeeks.org/problems/triangle-pattern-1662285911/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_17)
+```
+   A
+  ABA
+ ABCBA
+ABCDCBA
+```
+### Code:
+```
+class Solution:
+    def printTriangle(self, N):
+        for i in range(1, N+1):
+            for j in range(N-i,0,-1):
+                print(" ",end="")
+            for k in range(97, 97+i):
+                print(chr(k).upper(),end="")
+            if (i>1):
+                for l in range(97+i-1,97,-1):
+                    print(chr(l-1).upper(),end="")
             print()
 ```
