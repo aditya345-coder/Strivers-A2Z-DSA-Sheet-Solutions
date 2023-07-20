@@ -1,6 +1,5 @@
 # Patterns
 
-
 ## [Pattern 12](https://practice.geeksforgeeks.org/problems/double-triangle-pattern-1662664259/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_12)
 ```
 1                 1
@@ -9,7 +8,6 @@
 1 2 3 4     4 3 2 1
 1 2 3 4 5 5 4 3 2 1
 ```
-## title {.tabset .tabset-fade}
 ### Code:
 ```
 class Solution:
@@ -22,9 +20,6 @@ class Solution:
             for l in range(i,-1,-1):
                 print(l+1,end=" ")
             print()
-```
-### tab 2:
-```
 ```
 
 ## [Pattern 13](https://practice.geeksforgeeks.org/problems/triangle-pattern-1661718712/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_13)
