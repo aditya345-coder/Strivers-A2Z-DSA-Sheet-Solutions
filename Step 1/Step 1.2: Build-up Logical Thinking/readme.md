@@ -1,6 +1,6 @@
 # Patterns
 
-## Pattern 12
+## [Pattern 12](https://practice.geeksforgeeks.org/problems/double-triangle-pattern-1662664259/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_12)
 ```
 1                 1
 1 2             2 1
