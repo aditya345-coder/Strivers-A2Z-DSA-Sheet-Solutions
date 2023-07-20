@@ -1,7 +1,6 @@
 # Patterns
 
-## Pattern 12:
-
+## Pattern 12
 ```
 1                 1
 1 2             2 1
@@ -24,13 +23,13 @@ class Solution:
             print()
 ```
 
-## Pattern 13:
+## Pattern 13
 ```
 ```
 ### Code:
 ```
 ```
-## Pattern 14:
+## [Pattern 14](https://practice.geeksforgeeks.org/problems/triangle-pattern-1662284916/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_14):
 ```
 A
 AB
@@ -47,7 +46,7 @@ class Solution:
                 print(chr(j).upper(), end="")
             print()
 ```
-## Pattern 13:
+## [Pattern 15](https://practice.geeksforgeeks.org/problems/triangle-pattern-1662285196/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_15)
 ```
 ABCDE
 ABCD
