@@ -23,3 +23,27 @@ class Solution:
                 print(l+1,end=" ")
             print()
 ```
+
+## Pattern 13:
+```
+```
+### Code:
+```
+```
+## Pattern 14:
+```
+A
+AB
+ABC
+ABCD
+ABCDE
+```
+### Code:
+```
+class Solution:
+    def printTriangle(self, N):
+        for i in range(1,N+1):
+            for j in range(97, 97+i):
+                print(chr(j).upper(), end="")
+            print()
+```
