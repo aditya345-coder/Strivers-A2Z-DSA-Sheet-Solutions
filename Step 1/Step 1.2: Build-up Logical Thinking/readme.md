@@ -101,3 +101,45 @@ class Solution:
                     print(chr(l-1).upper(),end="")
             print()
 ```
+## [Pattern 18]()
+```
+```
+### Code:
+```
+```
+## [Pattern 19](https://practice.geeksforgeeks.org/problems/double-triangle-pattern/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_19)
+```
+**********
+****  ****
+***    ***
+**      **
+*        *
+*        *
+**      **
+***    ***
+****  ****
+**********
+```
+### Code:
+```
+class Solution:
+    def printTriangle(self, N):
+        for i in range(0,N):
+            for j in range(N,i,-1):
+                print("*",end="")
+            if (i>0):
+                for k in range(i):
+                    print(" ",end=" ")
+            for l in range(N,i,-1):
+                print("*",end="")
+            print()
+        for i in range(0,N):
+            for j in range(i+1):
+                print("*",end="")
+            if (i<N-1):
+                for k in range(N*2-2-i, i, -1):
+                    print(" ",end="")
+            for l in range(i+1):
+                print("*",end="")
+            print()
+```
