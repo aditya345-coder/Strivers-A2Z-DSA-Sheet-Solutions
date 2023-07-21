@@ -73,3 +73,24 @@ if (armstrong_num == n):
 else:
     print("false")
 ```
+# [Print all Divisors]()
+
+## Solution:
+```
+```
+# [Check Prime](https://www.codingninjas.com/studio/problems/check-prime_624934?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+
+## Solution:
+```
+n = int(input())
+count = 0
+for i in range(1,int(sqrt(n)+1)):
+    if (n==1):
+        break
+    if (n%i==0):
+        count = count + 1
+if (count == 1):
+    print("YES")
+else:
+    print("NO")
+```
