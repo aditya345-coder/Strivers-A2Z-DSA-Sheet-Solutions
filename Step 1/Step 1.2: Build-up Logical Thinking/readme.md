@@ -143,3 +143,36 @@ class Solution:
                 print("*",end="")
             print()
 ```
+## [Pattern 20](https://practice.geeksforgeeks.org/problems/double-triangle-pattern-1662287416/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_20)
+```
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
+```
+## Code
+```
+class Solution:
+    def printTriangle(self, N):
+        for i in range(N):
+            for j in range(i+1):
+                print("*",end="")
+            for k in range(N-1,i,-1):
+                print(" ",end=" ")
+            for l in range(i+1):
+                print("*",end="")
+            print()
+        for i in range(N-1):
+            for j in range(N-1,i,-1):
+                print("*",end="")
+            for k in range(i+1):
+                print(" ",end=" ")
+            for l in range(N-1,i,-1):
+                print("*",end="")
+            print()
+```
