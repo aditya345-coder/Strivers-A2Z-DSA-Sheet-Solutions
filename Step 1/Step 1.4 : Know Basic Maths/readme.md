@@ -98,14 +98,6 @@ else:
 
 ## Solution:
 ```
-def sumOfAllDivisors(n: int) -> int:
-    sum = 0
-    for i in range(1, n+1):
-        sum = sum + (n//i)*i
-    return sum
-```
-## Java Solution:
-```
 public class Solution {
     public static int sumOfAllDivisors(int n){
         int sum = 0;
