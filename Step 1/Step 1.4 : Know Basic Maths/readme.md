@@ -46,6 +46,16 @@ else:
 
 ## Solution:
 ```
+public class Solution {
+    public static int calcGCD(int n, int m){
+        while (m%n!=0){
+            int rem = m%n;
+            m = n;
+            n =rem;
+        }    
+        return n;
+    }
+}
 ```
 
 # [Check Armstrong ](https://www.codingninjas.com/studio/problems/check-armstrong_589?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
