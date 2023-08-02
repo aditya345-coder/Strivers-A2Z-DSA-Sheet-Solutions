@@ -47,3 +47,19 @@ public class Solution {
     }
 }
 ```
+```
+from typing import List
+
+def bubbleSort(arr: List[int], n: int):
+    for i in range(len(arr)-1):
+        swapped = False
+        for j in range(len(arr)-i-1):
+            if (arr[j]>arr[j+1]):
+                temp = arr[j]
+                arr[j] = arr[j+1]
+                arr[j+1] = temp
+
+                swapped = True
+        if (swapped!=True):
+            break
+```
