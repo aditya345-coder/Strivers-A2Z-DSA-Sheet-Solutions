@@ -110,3 +110,24 @@ class Solution {
     }        
 }
 ```
+# [Move Zero's to End](https://www.codingninjas.com/studio/problems/ninja-and-the-zero-s_6581958?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+
+## Solution
+```
+```
+# [Linear Search](https://www.codingninjas.com/studio/problems/linear-search_6922070?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+
+## Solution
+```
+import java.util.*;
+public class Solution {
+    public static int linearSearch(int n, int num, int []arr){
+        for(int i=0; i<n; i++){
+            if (arr[i]==num){
+                return i;
+            }
+        }
+        return -1;
+    }
+}
+```
