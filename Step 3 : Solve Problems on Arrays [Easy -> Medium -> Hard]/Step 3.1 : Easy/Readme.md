@@ -131,3 +131,22 @@ public class Solution {
     }
 }
 ```
+# [Missing Number](https://www.codingninjas.com/studio/problems/missing-number_6680467?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTab=1)
+
+## Solution
+```
+public class Solution {
+    public static int missingNumber(int []a, int N) {
+        int sum = 0;
+        int arr_sum = 0;
+        for (int i=1; i<N+1; i++){
+            sum = sum + i;
+        }
+        for (int i=1; i<N+1; i++){
+            arr_sum = arr_sum + a[i-1];
+        }
+        int missingNumber = sum - arr_sum;
+        return missingNumber;
+    }
+}
+```
