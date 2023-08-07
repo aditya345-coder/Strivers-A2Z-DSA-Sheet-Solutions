@@ -131,6 +131,7 @@ public class Solution {
     }
 }
 ```
+
 # [Missing Number](https://www.codingninjas.com/studio/problems/missing-number_6680467?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTab=1)
 
 ## Solution
