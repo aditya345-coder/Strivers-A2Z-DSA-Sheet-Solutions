@@ -131,7 +131,11 @@ public class Solution {
     }
 }
 ```
+# [Sorted Array](https://www.codingninjas.com/studio/problems/sorted-array_6613259?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
+## Solution
+```
+```
 # [Missing Number](https://www.codingninjas.com/studio/problems/missing-number_6680467?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTab=1)
 
 ## Solution
@@ -150,4 +154,24 @@ public class Solution {
         return missingNumber;
     }
 }
+```
+# [Traffic](https://www.codingninjas.com/studio/problems/traffic_6682625?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+
+## Solution
+```
+```
+# [Find The Single Element](https://www.codingninjas.com/studio/problems/find-the-single-element_6680465?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+
+## Solution
+```
+```
+# [Longest Subarray With Sum K](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_6682399?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+
+## Solution
+```
+```
+# [Longest Subarray With Sum K](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_5713505?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+
+## Solution
+```
 ```
