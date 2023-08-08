@@ -1,5 +1,7 @@
 # [Largest Element in the Array ](https://www.codingninjas.com/studio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
+<details>
+<summary>Python</summary>
 ## Solution
 ```
 import java.util.* ;
@@ -17,6 +19,13 @@ public class Solution {
     }
 }
 ```
+## Solution
+```
+```
+</details>
+
+<details>
+<summary>Python</summary>
 
 # [Ninja And The Second Order Elements ](https://www.codingninjas.com/studio/problems/ninja-and-the-second-order-elements_6581960?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=1)
 
