@@ -164,6 +164,15 @@ public class Solution {
 
 ## Solution
 ```
+public class Solution {
+    public static int getSingleElement(int []arr){
+        int xor = 0;
+        for (int i=0; i<arr.length; i++){
+            xor = xor^arr[i];
+        }
+        return xor;
+    }
+}
 ```
 # [Longest Subarray With Sum K](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_6682399?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
