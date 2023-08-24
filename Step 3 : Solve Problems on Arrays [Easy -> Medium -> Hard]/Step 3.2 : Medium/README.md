@@ -42,3 +42,28 @@ public class Solution {
 }
 
 ```
+
+# [Maximum Subarray Sum](https://www.codingninjas.com/studio/problems/maximum-subarray-sum_630526?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+
+## Solution
+```
+import java.util.* ;
+import java.io.*; 
+
+public class Solution {
+	public static long maxSubarraySum(int[] arr, int n) {
+		long sum = 0;
+		long max_sum = 0;
+		for(int i=0; i<n; i++){
+			sum = sum + arr[i];
+			if (max_sum < sum){
+				max_sum = sum;
+			}
+			if (sum < 0){
+				sum = 0;
+			}
+		}
+		return max_sum;
+	}
+}
+```
