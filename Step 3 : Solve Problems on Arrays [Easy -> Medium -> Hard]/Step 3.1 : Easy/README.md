@@ -16,6 +16,7 @@ public class Solution {
         return max;
     }
 }
+// Time Complexity: O(n), Space Complexity: O(1)
 ```
 
 # [Ninja And The Second Order Elements ](https://www.codingninjas.com/studio/problems/ninja-and-the-second-order-elements_6581960?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=1)
@@ -39,6 +40,7 @@ public class Solution {
         return arr;
     }
 }
+// Time Complexity: O(n^2), Space Complexity: O(1)
 ```
 # [Ninja And The Sorted Check](https://www.codingninjas.com/studio/problems/ninja-and-the-sorted-check_6581957?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
@@ -51,13 +53,14 @@ public class Solution {
         for (int i = 0; i < a.length; i++)
             b[i] = a[i];
         
-        Arrays.sort(b);
+        Arrays.sort(b); // Tim Sort algorithm
         if (Arrays.equals(a,b)){
             return 1;
         }
         return 0;     
     }
 }
+// Time Complexity: O(nlogn), Space Complexity: O(1)
 ```
 # [Left Rotate an Array by One](https://www.codingninjas.com/studio/problems/left-rotate-an-array-by-one_5026278?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
@@ -76,6 +79,7 @@ public class Solution {
         return arr;
     }
 }
+// Time Complexity: O(n), Space Complexity: O(1)
 ```
 
 # [Rotate array](https://www.codingninjas.com/studio/problems/rotate-array_1230543?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
@@ -85,19 +89,18 @@ public class Solution {
 import java.util.* ;
 import java.io.*; 
 class Solution {
-	
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int [] arr = new int[n];
-        for (int i=0; i<n; i++)
-        {
-            arr[i]=sc.nextInt();
-        }
-        int k = sc.nextInt();
-        Solution obj = new Solution();
-        obj.rotate(arr,n,k);
-      }
+        	int n = sc.nextInt();
+        	int [] arr = new int[n];
+        	for (int i=0; i<n; i++)
+        	{
+            		arr[i]=sc.nextInt();
+        	}
+        	int k = sc.nextInt();
+        	Solution obj = new Solution();
+        	obj.rotate(arr,n,k);
+		}
     void rotate(int arr[], int n, int k){
         for (int i=0; i<k; i++){
             int temp = arr[0];
@@ -111,6 +114,7 @@ class Solution {
         }
     }        
 }
+// Time Complexity: O(n*k), Space Complexity: O(n)
 ```
 # [Move Zero's to End](https://www.codingninjas.com/studio/problems/ninja-and-the-zero-s_6581958?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
@@ -132,6 +136,7 @@ public class Solution {
         return -1;
     }
 }
+// Time Complexity: O(n), Space Complexity: O(1)
 ```
 # [Sorted Array](https://www.codingninjas.com/studio/problems/sorted-array_6613259?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
@@ -156,6 +161,7 @@ public class Solution {
         return missingNumber;
     }
 }
+// Time Complexity: O(n), Space Complexity: O(1)
 ```
 # [Traffic](https://www.codingninjas.com/studio/problems/traffic_6682625?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
@@ -175,6 +181,7 @@ public class Solution {
         return xor;
     }
 }
+// Time Complexity: O(n), Space Complexity: O(1)
 ```
 # [Longest Subarray With Sum K](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_6682399?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
