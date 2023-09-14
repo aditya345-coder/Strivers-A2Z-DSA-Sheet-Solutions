@@ -24,6 +24,7 @@ public class Solution {
 ```
 public class Solution {
     public static int[] getSecondOrderElements(int n, int []a) {
+	// Insertion Sort
         for (int i=1; i<n; i++){
             int j = i-1;
             int key = a[i];
@@ -33,6 +34,7 @@ public class Solution {
             }
             a[j+1] = key;
         }
+	// storing largest and smallest element
         int [] arr = {a[n-2],a[1]};
         return arr;
     }
