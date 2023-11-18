@@ -1,6 +1,6 @@
 # [Largest Element in the Array ](https://www.codingninjas.com/studio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
-## Solution
+## Java Solution
 ```Java
 import java.util.* ;
 import java.io.*; 
@@ -21,7 +21,7 @@ public class Solution {
 
 # [Ninja And The Second Order Elements ](https://www.codingninjas.com/studio/problems/ninja-and-the-second-order-elements_6581960?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=1)
 
-## Solution
+## Java Solution
 ```
 public class Solution {
     public static int[] getSecondOrderElements(int n, int []a) {
@@ -44,7 +44,7 @@ public class Solution {
 ```
 # [Ninja And The Sorted Check](https://www.codingninjas.com/studio/problems/ninja-and-the-sorted-check_6581957?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
-## Solution
+## Java Solution
 ```
 import java.util.*;
 public class Solution {
@@ -64,7 +64,7 @@ public class Solution {
 ```
 # [Left Rotate an Array by One](https://www.codingninjas.com/studio/problems/left-rotate-an-array-by-one_5026278?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
-## Solution
+## Java Solution
 ```
 import java.util.* ;
 import java.io.*; 
@@ -84,7 +84,7 @@ public class Solution {
 
 # [Rotate array](https://www.codingninjas.com/studio/problems/rotate-array_1230543?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
-## Solution
+## Java Solution
 ```Java
 import java.util.* ;
 import java.io.*; 
@@ -118,7 +118,7 @@ class Solution {
 ```
 # [Move Zero's to End](https://www.codingninjas.com/studio/problems/ninja-and-the-zero-s_6581958?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-## Solution
+## Java Solution
 ```Java
 public class Solution {
 	public static int[] moveZeros(int n, int []a) {
@@ -134,6 +134,7 @@ public class Solution {
 	return arr;
 }
 ```
+## Python Solution
 ```Python
 def moveZeros(n: int,  a: [int]) -> [int]:
     ln = a.count(0)
@@ -144,7 +145,7 @@ def moveZeros(n: int,  a: [int]) -> [int]:
 ```
 # [Linear Search](https://www.codingninjas.com/studio/problems/linear-search_6922070?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
-## Solution
+## Java Solution
 ```
 import java.util.*;
 public class Solution {
@@ -161,12 +162,12 @@ public class Solution {
 ```
 # [Sorted Array](https://www.codingninjas.com/studio/problems/sorted-array_6613259?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-## Solution
+## Java Solution
 ```
 ```
 # [Missing Number](https://www.codingninjas.com/studio/problems/missing-number_6680467?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTab=1)
 
-## Solution
+## Java Solution
 ```
 public class Solution {
     public static int missingNumber(int []a, int N) {
@@ -186,12 +187,12 @@ public class Solution {
 ```
 # [Traffic](https://www.codingninjas.com/studio/problems/traffic_6682625?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-## Solution
+## Java Solution
 ```
 ```
 # [Find The Single Element](https://www.codingninjas.com/studio/problems/find-the-single-element_6680465?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
-## Solution
+## Java Solution
 ```
 public class Solution {
     public static int getSingleElement(int []arr){
@@ -206,11 +207,11 @@ public class Solution {
 ```
 # [Longest Subarray With Sum K](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_6682399?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-## Solution
+## Java Solution
 ```
 ```
 # [Longest Subarray With Sum K](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_5713505?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-## Solution
+## Java Solution
 ```
 ```
