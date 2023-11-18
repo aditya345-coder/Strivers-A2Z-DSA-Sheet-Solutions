@@ -62,6 +62,12 @@ public class Solution {
 }
 // Time Complexity: O(nlogn), Space Complexity: O(1)
 ```
+# [Remove Duplicates from Sorted Array](https://www.codingninjas.com/studio/problems/remove-duplicates-from-sorted-array_1102307?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+
+## Java Solution
+```
+```
+
 # [Left Rotate an Array by One](https://www.codingninjas.com/studio/problems/left-rotate-an-array-by-one_5026278?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
 ## Java Solution
@@ -160,10 +166,17 @@ public class Solution {
 }
 // Time Complexity: O(n), Space Complexity: O(1)
 ```
-# [Sorted Array](https://www.codingninjas.com/studio/problems/sorted-array_6613259?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+
+# [Merge 2 Sorted Array](https://www.codingninjas.com/studio/problems/sorted-array_6613259?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ## Java Solution
 ```
+```
+## Python Solution
+```
+def sortedArray(a: [int], b: [int]) -> [int]:
+    u = list(set(a).union(set(b)))
+    return sorted(u)
 ```
 # [Missing Number](https://www.codingninjas.com/studio/problems/missing-number_6680467?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTab=1)
 
