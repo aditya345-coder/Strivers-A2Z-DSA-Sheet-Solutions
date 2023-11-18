@@ -1,7 +1,7 @@
 # [Largest Element in the Array ](https://www.codingninjas.com/studio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
 ## Solution
-```
+```Java
 import java.util.* ;
 import java.io.*; 
 
@@ -133,6 +133,14 @@ public class Solution {
 } 
 	return arr;
 }
+```
+```Python
+def moveZeros(n: int,  a: [int]) -> [int]:
+    ln = a.count(0)
+    for i in range(ln):
+        a.remove(0)
+        a.append(0)
+    return a
 ```
 # [Linear Search](https://www.codingninjas.com/studio/problems/linear-search_6922070?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
