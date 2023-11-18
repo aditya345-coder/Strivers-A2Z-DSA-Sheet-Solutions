@@ -85,7 +85,7 @@ public class Solution {
 # [Rotate array](https://www.codingninjas.com/studio/problems/rotate-array_1230543?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
 ## Solution
-```
+```Java
 import java.util.* ;
 import java.io.*; 
 class Solution {
@@ -119,7 +119,20 @@ class Solution {
 # [Move Zero's to End](https://www.codingninjas.com/studio/problems/ninja-and-the-zero-s_6581958?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ## Solution
-```
+```Java
+public class Solution {
+	public static int[] moveZeros(int n, int []a) {
+	int count=0;
+	int [] arr = new int[n];
+	int j=0;
+	for(int i=0; i<n; i++){
+	if(a[i]!=0){
+		arr[j]=a[i];
+		j++;
+	}
+} 
+	return arr;
+}
 ```
 # [Linear Search](https://www.codingninjas.com/studio/problems/linear-search_6922070?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
