@@ -67,6 +67,11 @@ public class Solution {
 ## Java Solution
 ```
 ```
+## Python Solution
+```
+def removeDuplicates(arr,n):
+    return len(set(arr))
+```
 
 # [Left Rotate an Array by One](https://www.codingninjas.com/studio/problems/left-rotate-an-array-by-one_5026278?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
@@ -197,6 +202,15 @@ public class Solution {
     }
 }
 // Time Complexity: O(n), Space Complexity: O(1)
+```
+
+## Python Solution
+```
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        for i in range(len(nums)+1):
+            if (i not in nums):
+                return i
 ```
 # [Traffic](https://www.codingninjas.com/studio/problems/traffic_6682625?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
