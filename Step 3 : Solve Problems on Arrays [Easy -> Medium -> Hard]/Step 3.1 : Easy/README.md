@@ -66,6 +66,22 @@ public class Solution {
 
 ## Java Solution
 ```
+import java.util.ArrayList;
+
+public class Solution {
+	public static int removeDuplicates(ArrayList<Integer> arr,int n) {
+		// first pointer
+		int i=0; 
+		// Second pointer
+		for(int j=1; j<n; j++){
+			// if not duplicates increment first pointer and check again
+			 if (!arr.get(j).equals(arr.get(j - 1))) {
+                arr.set(i++, arr.get(j));
+            }
+		}
+		return i+1;
+	}
+}
 ```
 ## Python Solution
 ```
