@@ -104,3 +104,90 @@ public class Solution {
 ### Solution
 ```Java
 ```
+
+# [Best time to buy and sell stock](https://www.codingninjas.com/studio/problems/best-time-to-buy-and-sell-stock_6194560?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+
+### Solution
+```Java
+public class Solution {
+    public static int bestTimeToBuyAndSellStock(int []prices) {
+        int min = prices[0]; // Initilize minimum price
+        int max_profit = 0; // Initilize a varaible which stores max profit
+        for(int i=1; i<prices.length; i++){  
+            if (prices[i]<min){ 
+                min = prices[i]; // Taking minimum element
+            }
+		   // Check if current price subtracted from min price is greater than max profit
+            else if (prices[i]-min>max_profit){ 
+                max_profit = prices[i]-min;
+            }
+        }
+        return max_profit;
+    }
+}
+```
+
+# [Alternate Numbers (Rearrange the array in alternating positive & negative)](https://www.codingninjas.com/studio/problems/alternate-numbers_6783445?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+
+### Solution
+```
+```
+
+# [Next Greater Permutation](https://www.codingninjas.com/studio/problems/next-greater-permutation_6929564?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+
+### Solution
+```
+```
+
+# [Superior Elements (Leaders in an Array problem)](https://www.codingninjas.com/studio/problems/superior-elements_6783446?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+
+### Solution
+```
+import java.util.*;
+public class Solution {
+    public static List< Integer > superiorElements(int []a) {
+        List<Integer> list=new ArrayList<Integer>();  // Create a list
+        int n = a.length;
+        int largest=a[n-1]; // Take a variable which will store largest element
+        for(int i=n-2; i>=0; i--){
+            if (a[i]>largest){ // Largest element from right
+                largest = a[i];
+                list.add(largest);
+            }
+        }
+        list.add(a[n-1]); // Add last element as it is always superior
+        Collections.sort(list); // Sort list
+        return list;
+    }
+}
+```
+
+# [Longest Consecutive Sequence in an Array (Longest Successive Elements)](https://www.codingninjas.com/studio/problems/longest-successive-elements_6811740?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+
+### Solution
+```Java
+```
+
+# [Zero Matrix](https://www.codingninjas.com/studio/problems/zero-matrix_1171153?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+
+### Solution
+```Java
+```
+
+# [Rotate The Matrix](https://www.codingninjas.com/studio/problems/rotate-the-matrix_6825090?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+
+### Solution
+```Java
+```
+
+# [Spiral Matrix](https://www.codingninjas.com/studio/problems/spiral-matrix_6922069?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+
+### Solution
+```Java
+```
+
+# [Count All Subarrays With Given Sum](https://www.codingninjas.com/studio/problems/subarray-sums-i_1467103?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+
+### Solution
+```Java
+```
