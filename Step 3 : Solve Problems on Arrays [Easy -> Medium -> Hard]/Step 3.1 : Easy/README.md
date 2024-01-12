@@ -22,7 +22,7 @@ public class Solution {
 # [Ninja And The Second Order Elements ](https://www.codingninjas.com/studio/problems/ninja-and-the-second-order-elements_6581960?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=1)
 
 ## Java Solution
-```
+```Java
 public class Solution {
     public static int[] getSecondOrderElements(int n, int []a) {
 	// Insertion Sort
@@ -65,7 +65,7 @@ public class Solution {
 # [Remove Duplicates from Sorted Array](https://www.codingninjas.com/studio/problems/remove-duplicates-from-sorted-array_1102307?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
 
 ## Java Solution
-```
+```Java
 import java.util.ArrayList;
 
 public class Solution {
@@ -75,7 +75,7 @@ public class Solution {
 		// Second pointer
 		for(int j=1; j<n; j++){
 			// if not duplicates increment first pointer and check again
-			 if (!arr.get(j).equals(arr.get(j - 1))) {
+			 if (!arr.get(j).equals(arr.get(j - 1))) { // use .equals() for List
                 arr.set(i++, arr.get(j));
             }
 		}
@@ -92,7 +92,7 @@ def removeDuplicates(arr,n):
 # [Left Rotate an Array by One](https://www.codingninjas.com/studio/problems/left-rotate-an-array-by-one_5026278?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
 ## Java Solution
-```
+```Java
 import java.util.* ;
 import java.io.*; 
 
@@ -192,6 +192,46 @@ public class Solution {
 
 ## Java Solution
 ```
+import java.util.*;
+public class Solution {
+    public static List< Integer > sortedArray(int []a, int []b) {
+        List<Integer> uarr=new ArrayList<Integer>(); 
+        int i=0, j=0; // Initilize 2 pointers
+        while(i<a.length && j<b.length){ // Loop until one of pointer exceeds the length
+			// If element of a is less and equal to element of b
+			if (a[i]<=b[j]){
+                if(uarr.size()==0 || uarr.get(uarr.size()-1)!=a[i]){
+                    uarr.add(a[i]);
+                }
+                i++;
+                
+            }
+			// If element of b is less and equal to element of a
+            else {
+                if(uarr.size()==0 || uarr.get(uarr.size()-1)!=b[j]){
+                    uarr.add(b[j]);
+                }
+                j++;
+            }
+        }
+		// Add remaining element from both array (only of these loop will run)
+        while(i<a.length){
+            if(uarr.get(uarr.size()-1)!=a[i]){
+                uarr.add(a[i]);
+    
+            }
+            i++;
+        }
+         while(j<b.length){
+            if(uarr.get(uarr.size()-1)!=b[j]){
+                uarr.add(b[j]);
+            }
+            j++;
+        }
+        return uarr;
+         
+    }
+}
 ```
 ## Python Solution
 ```
