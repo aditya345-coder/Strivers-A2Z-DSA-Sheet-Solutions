@@ -292,6 +292,27 @@ public class Solution {
 
 ## Java Solution
 ```
+public class Solution {
+    public static int longestSubarrayWithSumK(int []a, long k) {
+        int n = a.length;
+        int mcount = 0; // maximum count
+        for(int i=0; i<n; i++){
+            long sum =0;  // sum (reset to 0 when j loop ends)
+            int count = 0; // temp count
+            for(int j=i; j<n; j++){
+                sum+=a[j]; // sum until 
+                count++;
+                if (sum==k){
+                    mcount = Math.max(count, mcount); // take maximum count
+                }
+                if (sum>k){ // if sum exceeds k then break loop
+                    break;
+                }
+            }
+        }
+        return mcount;
+    }
+}
 ```
 # [Longest Subarray With Sum K](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_5713505?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
