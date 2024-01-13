@@ -131,6 +131,22 @@ public class Solution {
 
 ### Solution
 ```
+public class Solution {
+    public static int[] alternateNumbers(int []a) {
+        int [] arr = new int [a.length]; // Create an array of same size
+        int pos=0, neg=1; // Create 2 pointer 
+        for(int i=0; i<a.length; i++){
+            if (a[i]>0){ // If element is positive
+                arr[pos] = a[i];
+                pos+=2;
+            }else{ // If element is negative
+                arr[neg] = a[i];
+                neg+=2;
+            }
+        }
+        return arr;
+    }
+}
 ```
 
 # [Next Greater Permutation](https://www.codingninjas.com/studio/problems/next-greater-permutation_6929564?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
