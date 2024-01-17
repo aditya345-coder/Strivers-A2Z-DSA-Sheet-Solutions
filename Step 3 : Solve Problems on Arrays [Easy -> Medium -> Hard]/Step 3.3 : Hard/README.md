@@ -26,6 +26,36 @@ public class Solution {
 
 ### Solution
 ```Java
+import java.util.*;
+public class Solution {
+    public static List< Integer > majorityElement(int []v) {
+        List<Integer> list=new ArrayList<Integer>(); // Creating Arraylist
+        Arrays.sort(v); // Sorting
+        int n = v.length;
+        int mcount = 0; // Storing max count
+        for(int i=0; i<n; i++){
+            int count = 0; // Storing count for each element
+            for(int j=i; j<n; j++){
+                if (v[i]==v[j]){
+                    count +=1;
+                }
+                else{
+                    break;
+                }
+                mcount = Math.max(count, mcount); // Storing maximum count
+            }
+            // If max count is greater than 1 and element is not present in list
+            if (mcount>Math.floor(n/3) && !list.contains(v[i])){
+                list.add(v[i]);
+                mcount=0;
+            }else{
+                mcount=0;
+            }
+        }
+        Collections.sort(list);
+        return list;
+    }
+}
 ```
 
 # 3. [Three Sum](https://www.codingninjas.com/studio/problems/three-sum_6922132?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
