@@ -1,4 +1,4 @@
-# [Reading](https://www.codingninjas.com/studio/problems/reading_6845742?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+# 1. [Reading](https://www.codingninjas.com/studio/problems/reading_6845742?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
 ## Solution
 ```
@@ -15,7 +15,7 @@ public class Solution {
     }
 }
 ```
-# [Sort An Array of 0s, 1s and 2s](https://www.codingninjas.com/studio/problems/sort-an-array-of-0s-1s-and-2s_892977?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+# 2. [Sort An Array of 0s, 1s and 2s](https://www.codingninjas.com/studio/problems/sort-an-array-of-0s-1s-and-2s_892977?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
 ## Solution
 ```
@@ -43,7 +43,7 @@ public class Solution {
 
 ```
 
-# [Majority Element (>n/2 times)](https://www.codingninjas.com/studio/problems/majority-element_6783241?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 3. [Majority Element (>n/2 times)](https://www.codingninjas.com/studio/problems/majority-element_6783241?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ### Solution
 
@@ -75,7 +75,7 @@ class Solution {
 }
 ```
 
-# [Maximum Subarray Sum (Kadane's Algorithm)](https://www.codingninjas.com/studio/problems/maximum-subarray-sum_630526?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+# 4. [Maximum Subarray Sum (Kadane's Algorithm)](https://www.codingninjas.com/studio/problems/maximum-subarray-sum_630526?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
 ## Solution
 ```
@@ -99,13 +99,13 @@ public class Solution {
 	}
 }
 ```
-# [Longest Subarray With Sum K (Print subarray with maximum subarray)](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_6682399?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+# 5. [Longest Subarray With Sum K (Print subarray with maximum subarray)](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_6682399?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
 
 ### Solution
 ```Java
 ```
 
-# [Best time to buy and sell stock](https://www.codingninjas.com/studio/problems/best-time-to-buy-and-sell-stock_6194560?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 6. [Best time to buy and sell stock](https://www.codingninjas.com/studio/problems/best-time-to-buy-and-sell-stock_6194560?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ### Solution
 ```Java
@@ -127,7 +127,7 @@ public class Solution {
 }
 ```
 
-# [Alternate Numbers (Rearrange the array in alternating positive & negative)](https://www.codingninjas.com/studio/problems/alternate-numbers_6783445?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 7. [Alternate Numbers (Rearrange the array in alternating positive & negative)](https://www.codingninjas.com/studio/problems/alternate-numbers_6783445?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ### Solution
 ```
@@ -149,13 +149,13 @@ public class Solution {
 }
 ```
 
-# [Next Greater Permutation](https://www.codingninjas.com/studio/problems/next-greater-permutation_6929564?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 8. [Next Greater Permutation](https://www.codingninjas.com/studio/problems/next-greater-permutation_6929564?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ### Solution
 ```
 ```
 
-# [Superior Elements (Leaders in an Array problem)](https://www.codingninjas.com/studio/problems/superior-elements_6783446?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 9. [Superior Elements (Leaders in an Array problem)](https://www.codingninjas.com/studio/problems/superior-elements_6783446?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ### Solution
 ```
@@ -178,31 +178,63 @@ public class Solution {
 }
 ```
 
-# [Longest Consecutive Sequence in an Array (Longest Successive Elements)](https://www.codingninjas.com/studio/problems/longest-successive-elements_6811740?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 10. [Longest Consecutive Sequence in an Array (Longest Successive Elements)](https://www.codingninjas.com/studio/problems/longest-successive-elements_6811740?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+
+### Solution
+```Java
+import java.util.*;
+public class Solution {
+    public static int longestSuccessiveElements(int []a) {
+        HashMap<Integer, Boolean> map = new HashMap<>(); // Create a Hashmap
+        int n = a.length;
+        // assigning all the key with true
+        for(int i=0; i<n; i++){
+            map.put(a[i], true);
+        }
+        // if current element is not a starting elment then it's value is True
+        for(int i=0; i<n; i++){
+            // If previous decremented key is present in map then set it's value false
+            if (map.containsKey(a[i]-1)){ 
+                map.put(a[i], false);    
+            }
+        }
+        int mcount =0;
+        for(int i=0; i<n; i++){
+            int count =1;
+            if(map.get(a[i])==true){
+                int val=a[i];
+                int in=1;
+                // Loop until successive sequence is present
+                while(map.containsKey(val+count)){
+                    count++;
+                }
+            }
+            mcount = Math.max(count, mcount);
+        }
+        return mcount;  
+    }
+}
+```
+
+# 11. [Zero Matrix](https://www.codingninjas.com/studio/problems/zero-matrix_1171153?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ### Solution
 ```Java
 ```
 
-# [Zero Matrix](https://www.codingninjas.com/studio/problems/zero-matrix_1171153?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 12. [Rotate The Matrix](https://www.codingninjas.com/studio/problems/rotate-the-matrix_6825090?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ### Solution
 ```Java
 ```
 
-# [Rotate The Matrix](https://www.codingninjas.com/studio/problems/rotate-the-matrix_6825090?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 13. [Spiral Matrix](https://www.codingninjas.com/studio/problems/spiral-matrix_6922069?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ### Solution
 ```Java
 ```
 
-# [Spiral Matrix](https://www.codingninjas.com/studio/problems/spiral-matrix_6922069?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
-
-### Solution
-```Java
-```
-
-# [Count All Subarrays With Given Sum](https://www.codingninjas.com/studio/problems/subarray-sums-i_1467103?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 14. [Count All Subarrays With Given Sum](https://www.codingninjas.com/studio/problems/subarray-sums-i_1467103?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ### Solution
 ```Java
