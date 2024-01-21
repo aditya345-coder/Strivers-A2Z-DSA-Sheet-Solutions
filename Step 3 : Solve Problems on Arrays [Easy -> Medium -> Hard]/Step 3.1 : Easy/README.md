@@ -1,4 +1,4 @@
-# [Largest Element in the Array ](https://www.codingninjas.com/studio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+# 1. [Largest Element in the Array ](https://www.codingninjas.com/studio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
 ## Java Solution
 ```Java
@@ -19,7 +19,7 @@ public class Solution {
 // Time Complexity: O(n), Space Complexity: O(1)
 ```
 
-# [Ninja And The Second Order Elements ](https://www.codingninjas.com/studio/problems/ninja-and-the-second-order-elements_6581960?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=1)
+# 2. [Ninja And The Second Order Elements ](https://www.codingninjas.com/studio/problems/ninja-and-the-second-order-elements_6581960?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=1)
 
 ## Java Solution
 ```Java
@@ -71,10 +71,10 @@ public class Solution {
 }
 // Time complexity: O(N), Space complexity: O(1)
 ```
-# [Ninja And The Sorted Check](https://www.codingninjas.com/studio/problems/ninja-and-the-sorted-check_6581957?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+# 3. [Ninja And The Sorted Check](https://www.codingninjas.com/studio/problems/ninja-and-the-sorted-check_6581957?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
 ## Java Solution
-```
+```Java
 import java.util.*;
 public class Solution {
     public static int isSorted(int n, int []a) {
@@ -91,7 +91,7 @@ public class Solution {
 }
 // Time Complexity: O(nlogn), Space Complexity: O(1)
 ```
-# [Remove Duplicates from Sorted Array](https://www.codingninjas.com/studio/problems/remove-duplicates-from-sorted-array_1102307?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+# 4. [Remove Duplicates from Sorted Array](https://www.codingninjas.com/studio/problems/remove-duplicates-from-sorted-array_1102307?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
 
 ## Java Solution
 ```Java
@@ -113,12 +113,12 @@ public class Solution {
 }
 ```
 ## Python Solution
-```
+```Python
 def removeDuplicates(arr,n):
     return len(set(arr))
 ```
 
-# [Left Rotate an Array by One](https://www.codingninjas.com/studio/problems/left-rotate-an-array-by-one_5026278?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+# 5. [Left Rotate an Array by One](https://www.codingninjas.com/studio/problems/left-rotate-an-array-by-one_5026278?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
 ## Java Solution
 ```Java
@@ -138,7 +138,7 @@ public class Solution {
 // Time Complexity: O(n), Space Complexity: O(1)
 ```
 
-# [Rotate array](https://www.codingninjas.com/studio/problems/rotate-array_1230543?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+# 6. [Rotate array](https://www.codingninjas.com/studio/problems/rotate-array_1230543?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
 ## Java Solution
 ```Java
@@ -172,7 +172,7 @@ class Solution {
 }
 // Time Complexity: O(n*k), Space Complexity: O(n)
 ```
-# [Move Zero's to End](https://www.codingninjas.com/studio/problems/ninja-and-the-zero-s_6581958?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 7. [Move Zero's to End](https://www.codingninjas.com/studio/problems/ninja-and-the-zero-s_6581958?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ## Java Solution
 ```Java
@@ -199,10 +199,10 @@ def moveZeros(n: int,  a: [int]) -> [int]:
         a.append(0)
     return a
 ```
-# [Linear Search](https://www.codingninjas.com/studio/problems/linear-search_6922070?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+# 8. [Linear Search](https://www.codingninjas.com/studio/problems/linear-search_6922070?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
 ## Java Solution
-```
+```Java
 import java.util.*;
 public class Solution {
     public static int linearSearch(int n, int num, int []arr){
@@ -217,10 +217,10 @@ public class Solution {
 // Time Complexity: O(n), Space Complexity: O(1)
 ```
 
-# [Merge 2 Sorted Array](https://www.codingninjas.com/studio/problems/sorted-array_6613259?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 9. [Merge 2 Sorted Array](https://www.codingninjas.com/studio/problems/sorted-array_6613259?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ## Java Solution
-```
+```Java
 import java.util.*;
 public class Solution {
     public static List< Integer > sortedArray(int []a, int []b) {
@@ -263,15 +263,15 @@ public class Solution {
 }
 ```
 ## Python Solution
-```
+```Python
 def sortedArray(a: [int], b: [int]) -> [int]:
     u = list(set(a).union(set(b)))
     return sorted(u)
 ```
-# [Missing Number](https://www.codingninjas.com/studio/problems/missing-number_6680467?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTab=1)
+# 10. [Missing Number](https://www.codingninjas.com/studio/problems/missing-number_6680467?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTab=1)
 
 ## Java Solution
-```
+```Java
 public class Solution {
     public static int missingNumber(int []a, int N) {
         int sum = 0;
@@ -290,22 +290,22 @@ public class Solution {
 ```
 
 ## Python Solution
-```
+```Python
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
         for i in range(len(nums)+1):
             if (i not in nums):
                 return i
 ```
-# [Traffic](https://www.codingninjas.com/studio/problems/traffic_6682625?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 11. [Traffic](https://www.codingninjas.com/studio/problems/traffic_6682625?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ## Java Solution
+```Java
 ```
-```
-# [Find The Single Element](https://www.codingninjas.com/studio/problems/find-the-single-element_6680465?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+# 12. [Find The Single Element](https://www.codingninjas.com/studio/problems/find-the-single-element_6680465?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
 ## Java Solution
-```
+```Java
 public class Solution {
     public static int getSingleElement(int []arr){
         int xor = 0;
@@ -317,10 +317,10 @@ public class Solution {
 }
 // Time Complexity: O(n), Space Complexity: O(1)
 ```
-# [Longest Subarray With Sum K](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_6682399?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 13. [Longest Subarray With Sum K](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_6682399?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ## Java Solution
-```
+```Java
 public class Solution {
     public static int longestSubarrayWithSumK(int []a, long k) {
         int n = a.length;
@@ -343,8 +343,8 @@ public class Solution {
     }
 }
 ```
-# [Longest Subarray With Sum K](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_5713505?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 14. [Longest Subarray With Sum K](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_5713505?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ## Java Solution
-```
+```Java
 ```
