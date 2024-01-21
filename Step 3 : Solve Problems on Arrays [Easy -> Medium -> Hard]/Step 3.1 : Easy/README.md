@@ -43,7 +43,7 @@ public class Solution {
 // Time Complexity: O(n^2), Space Complexity: O(1)
 ```
 ## Java Solution (Method 2)
-```
+```Java
 import java.util.*;
 public class Solution {
     public static int[] getSecondOrderElements(int n, int []a) {
