@@ -42,6 +42,35 @@ public class Solution {
 }
 // Time Complexity: O(n^2), Space Complexity: O(1)
 ```
+## Java Solution (Method 2)
+```
+import java.util.*;
+public class Solution {
+    public static int[] getSecondOrderElements(int n, int []a) {
+        // Initializing the driver variables.
+        int small = Integer.MAX_VALUE, secondSmall = Integer.MAX_VALUE;
+        int large = Integer.MIN_VALUE, secondLarge = Integer.MIN_VALUE;
+
+        // Iterating over an array and calculating the smaller and larger numbers.
+        for (int i = 0; i < n; i++) {
+            small = Math.min(small, a[i]);
+            large = Math.max(large, a[i]);
+        }
+
+        // Iterating again and updating the second order numbers.
+        for (int i = 0; i < n; i++) {
+            if (a[i] < secondSmall && a[i] != small) {
+                secondSmall = a[i];
+            }
+            if (a[i] > secondLarge && a[i] != large) {
+                secondLarge = a[i];
+            }
+        }
+        return new int[]{secondLarge, secondSmall};
+    }
+}
+// Time complexity: O(N), Space complexity: O(1)
+```
 # [Ninja And The Sorted Check](https://www.codingninjas.com/studio/problems/ninja-and-the-sorted-check_6581957?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
 ## Java Solution
