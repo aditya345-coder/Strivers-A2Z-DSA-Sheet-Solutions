@@ -1,7 +1,7 @@
-# [Selection Sort](https://www.codingninjas.com/studio/problems/selection-sort_624469?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+# 1. [Selection Sort](https://www.codingninjas.com/studio/problems/selection-sort_624469?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
 ## Solution
-```
+```Java
 public class Solution {
     public static void selectionSort(int[] arr) {
         
@@ -21,11 +21,10 @@ public class Solution {
     }
 }
 ```
-# [Bubble Sort](https://www.codingninjas.com/studio/problems/bubble-sort_624380?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=1)
+# 2. [Bubble Sort](https://www.codingninjas.com/studio/problems/bubble-sort_624380?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=1)
 
 ## Solution
-```
-
+```Java
 public class Solution {
     public static void bubbleSort(int[] arr, int n) {
         for(int i=0; i<arr.length-1; i++){
@@ -63,10 +62,10 @@ def bubbleSort(arr: List[int], n: int):
         if (swapped!=True):
             break
 ```
-# [Recursive Insertion sort](https://www.codingninjas.com/studio/problems/insertion-sort_624381?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 3. [Recursive Insertion sort](https://www.codingninjas.com/studio/problems/insertion-sort_624381?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ## Solution
-```
+```Java
 public class Solution {
     public static void insertionSort(int[] arr, int size) {
         for (int i=1; i<size; i++){
