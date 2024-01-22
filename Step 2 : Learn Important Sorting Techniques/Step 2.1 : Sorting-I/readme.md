@@ -46,7 +46,7 @@ public class Solution {
     }
 }
 ```
-# Python Solution
+## Python Solution
 ```Python
 from typing import List
 
