@@ -1,7 +1,7 @@
 # 1. [Reading](https://www.codingninjas.com/studio/problems/reading_6845742?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
-## Solution
-```
+## Java Solution
+```Java
 public class Solution {
     public static String read(int n, int []book, int target){
         for (int i=0; i<n; i++){
@@ -17,8 +17,8 @@ public class Solution {
 ```
 # 2. [Sort An Array of 0s, 1s and 2s](https://www.codingninjas.com/studio/problems/sort-an-array-of-0s-1s-and-2s_892977?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
-## Solution
-```
+## Java Solution
+```Java
 import java.util.*;
 import java.io.*; 
 public class Solution {
@@ -45,7 +45,7 @@ public class Solution {
 
 # 3. [Majority Element (>n/2 times)](https://www.codingninjas.com/studio/problems/majority-element_6783241?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-### Solution
+## Java Solution
 
 ```Java
 class Solution {
@@ -77,8 +77,8 @@ class Solution {
 
 # 4. [Maximum Subarray Sum (Kadane's Algorithm)](https://www.codingninjas.com/studio/problems/maximum-subarray-sum_630526?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
-## Solution
-```
+## Java Solution
+```Java
 import java.util.* ;
 import java.io.*; 
 
@@ -101,13 +101,13 @@ public class Solution {
 ```
 # 5. [Longest Subarray With Sum K (Print subarray with maximum subarray)](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_6682399?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
 
-### Solution
+## Java Solution
 ```Java
 ```
 
 # 6. [Best time to buy and sell stock](https://www.codingninjas.com/studio/problems/best-time-to-buy-and-sell-stock_6194560?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-### Solution
+## Java Solution
 ```Java
 public class Solution {
     public static int bestTimeToBuyAndSellStock(int []prices) {
@@ -129,8 +129,8 @@ public class Solution {
 
 # 7. [Alternate Numbers (Rearrange the array in alternating positive & negative)](https://www.codingninjas.com/studio/problems/alternate-numbers_6783445?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-### Solution
-```
+## Java Solution
+```Java
 public class Solution {
     public static int[] alternateNumbers(int []a) {
         int [] arr = new int [a.length]; // Create an array of same size
@@ -151,14 +151,14 @@ public class Solution {
 
 # 8. [Next Greater Permutation](https://www.codingninjas.com/studio/problems/next-greater-permutation_6929564?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-### Solution
-```
+## Java Solution
+```Java
 ```
 
 # 9. [Superior Elements (Leaders in an Array problem)](https://www.codingninjas.com/studio/problems/superior-elements_6783446?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-### Solution
-```
+## Java Solution
+```Java
 import java.util.*;
 public class Solution {
     public static List< Integer > superiorElements(int []a) {
@@ -180,7 +180,7 @@ public class Solution {
 
 # 10. [Longest Consecutive Sequence in an Array (Longest Successive Elements)](https://www.codingninjas.com/studio/problems/longest-successive-elements_6811740?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-### Solution
+## Java Solution
 ```Java
 import java.util.*;
 public class Solution {
@@ -218,24 +218,24 @@ public class Solution {
 
 # 11. [Zero Matrix](https://www.codingninjas.com/studio/problems/zero-matrix_1171153?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-### Solution
+## Java Solution
 ```Java
 ```
 
 # 12. [Rotate The Matrix](https://www.codingninjas.com/studio/problems/rotate-the-matrix_6825090?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-### Solution
+## Java Solution
 ```Java
 ```
 
 # 13. [Spiral Matrix](https://www.codingninjas.com/studio/problems/spiral-matrix_6922069?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-### Solution
+## Java Solution
 ```Java
 ```
 
 # 14. [Count All Subarrays With Given Sum](https://www.codingninjas.com/studio/problems/subarray-sums-i_1467103?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-### Solution
+## Java Solution
 ```Java
 ```
