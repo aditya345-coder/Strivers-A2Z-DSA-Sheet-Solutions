@@ -2,18 +2,17 @@
 ## Java Solution
 ```Java
 public class Solution {
-    static Node head;
+    static Node head; // 'head' variable stores the head of the linked list
     public void insert(int value){
-            Node node = new Node(value);
+            Node node = new Node(value);   // Attach node to the "next" of the previous node
             node.next = head;
             head = node;
     }
     public static Node constructLL(int []arr) {
         Solution s = new Solution();
         for(int i=arr.length-1; i>=0; i--){
-            s.insert(arr[i]);
+            s.insert(arr[i]); // insert function
         }
-        
         return head;
     }
 }
