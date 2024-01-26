@@ -19,9 +19,19 @@ public class Solution {
 }
 ```
 
-# 2. []()
+# 2. [ Insert Node At The Beginning](https://www.codingninjas.com/studio/problems/insert-node-at-the-beginning_8144739?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
 ## Java Solution
 ```Java
+public class Solution
+{
+    public static Node insertAtFirst(Node list, int newValue) {
+        // Make a node using 'newValue'
+        Node new_node = new Node(newValue);
+        // Assign 'list' to the next of 'new_node'
+        new_node.next = list;
+        return new_node;
+    }
+}
 ```
 
 # 3 []()
