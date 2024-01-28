@@ -49,6 +49,26 @@ public class Solution
 
 ### Solution
 ```Java
+public class Solution{
+    public static Node deleteLastNode(Node head) {
+        // If there is only one node
+        if (head.next==null){
+            head = null;
+            return head;
+        }
+        Node temp = head;
+        // Traversing to the last node
+        while(temp.next!=null && temp.next.next!=null){
+            temp = temp.next;
+        }
+        // remove last node
+        temp.next.prev = null; 
+        temp.next = null;
+        temp.prev = null;
+        return head;
+    }
+}
+// Time complexity: O(n), Space complexity: O(1)
 ```
 
 # 4. []()
