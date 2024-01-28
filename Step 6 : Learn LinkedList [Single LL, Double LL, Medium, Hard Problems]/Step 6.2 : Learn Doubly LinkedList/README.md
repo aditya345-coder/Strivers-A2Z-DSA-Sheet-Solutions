@@ -45,7 +45,7 @@ public class Solution
 }
 ```
 
-# 3. []()
+# 3. [Delete Last Node of a Doubly Linked List](https://www.codingninjas.com/studio/problems/delete-last-node-of-a-doubly-linked-list_8160469?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
 
 ### Solution
 ```Java
