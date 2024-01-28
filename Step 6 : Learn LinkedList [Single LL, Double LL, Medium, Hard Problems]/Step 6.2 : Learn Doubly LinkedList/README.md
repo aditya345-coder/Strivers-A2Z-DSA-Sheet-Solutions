@@ -16,6 +16,7 @@ public class Solution{
          return head;     
      }
 }
+// Time complexity: O(), Space complexity: O()
 ```
 
 # 2. [Insert at end of Doubly Linked List](https://www.codingninjas.com/studio/problems/insert-at-end-of-doubly-linked-list_8160464?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
@@ -43,6 +44,7 @@ public class Solution
         return list;   
     }
 }
+// Time complexity: O(), Space complexity: O()
 ```
 
 # 3. [Delete Last Node of a Doubly Linked List](https://www.codingninjas.com/studio/problems/delete-last-node-of-a-doubly-linked-list_8160469?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
@@ -71,8 +73,27 @@ public class Solution{
 // Time complexity: O(n), Space complexity: O(1)
 ```
 
-# 4. []()
+# 4. [Reverse A Doubly Linked List](https://www.codingninjas.com/studio/problems/reverse-a-doubly-linked-list_1116098?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ### Solution
 ```Java
+public class Solution{
+    public static Node reverseDLL(Node head){
+        Node temp = null;
+        Node current = head;
+        /* swap next and prev for all nodes of
+         doubly linked list */
+        while (current != null) {
+            temp = current.prev;
+            current.prev = current.next;
+            current.next = temp;
+            current = current.prev;
+        }
+        // update head
+        if (temp != null) {
+            head = temp.prev;
+        }
+        return head;
+    }
+}
 ```
