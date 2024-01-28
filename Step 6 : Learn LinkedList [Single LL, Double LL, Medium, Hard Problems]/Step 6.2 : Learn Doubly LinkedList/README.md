@@ -18,10 +18,31 @@ public class Solution{
 }
 ```
 
-# 2. []()
+# 2. [Insert at end of Doubly Linked List](https://www.codingninjas.com/studio/problems/insert-at-end-of-doubly-linked-list_8160464?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
 
 ### Solution
 ```Java
+public class Solution
+{
+    public static Node insertAtTail(Node list, int K) {
+        Node node = new Node(K); // Create a new node
+        node.next = null; // Set node next address null as we are inserting at end
+        if (list == null){ // If there is no node
+            node.prev = null;   
+            list = node; // Update head
+            return list;
+        }
+        // Loop till last element
+        Node temp = list; 
+        while(temp.next!=null){
+            temp = temp.next;
+        }
+        // Set address of node's prev and next
+        node.prev = temp;
+        temp.next = node;
+        return list;   
+    }
+}
 ```
 
 # 3. []()
