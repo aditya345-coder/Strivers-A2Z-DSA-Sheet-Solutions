@@ -334,9 +334,44 @@ public class Solution {
         return -1;
     }
 }
+// Time Complexity : O(log(N)), Space Complexity : O(1)
 ```
 ## Python Solution:
 ```
+def search(arr, n, k):
+    n = len(arr)
+    # Find smallest element (find the rotated Position)
+    low = 0; high = n-1
+    while(low<high):
+        mid = int(low + (high-low)//2)
+        if (arr[mid]>arr[high]):
+            low = mid + 1;
+        else:
+            high = mid;
+
+    # Search before rotatedPositon
+    rotatedPosition = low
+    low = 0; high = rotatedPosition 
+    while(low<=high):
+        mid = int(low + (high-low)//2)
+        if (arr[mid] == k):
+            return mid
+        elif (arr[mid]>k):
+            high = mid-1
+        else:
+            low = mid+1
+    # Search after rotatedPositon
+    low = rotatedPosition; high = n-1
+    while(low<=high):
+        mid = int(low + (high-low)//2)
+        if (arr[mid] == k):
+            return mid
+        elif (arr[mid]>k):
+            high = mid-1
+        else:
+            low = mid+1
+    return -1
+# Time Complexity : O(log(N)), Space Complexity : O(1)
 ```
 
 # 9. [Search in Rotated Sorted Array II]()
