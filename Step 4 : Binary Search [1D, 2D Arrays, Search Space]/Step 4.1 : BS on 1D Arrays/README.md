@@ -26,6 +26,10 @@ public class Solution {
     }
 }
 ```
+## Python Solution:
+```
+```
+
 # 2. [Implement Lower Bound](https://www.codingninjas.com/studio/problems/lower-bound_8165382?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ## Java Solution:
@@ -65,10 +69,16 @@ public class Solution {
     }
 }
 ```
+## Python Solution:
+```
+```
 
 # 3. [Implement Upper Bound](https://www.codingninjas.com/studio/problems/implement-upper-bound_8165383?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ## Java Solution:
+```
+```
+## Python Solution:
 ```
 ```
 
@@ -97,6 +107,9 @@ public class Solution {
         return low;
     }
 }
+```
+## Python Solution:
+```
 ```
 
 # 5. [Floor/Ceil in Sorted Array](https://www.codingninjas.com/studio/problems/ceiling-in-a-sorted-array_1825401?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
@@ -164,6 +177,9 @@ public class Solution {
         return res;
     } 
 }
+```
+## Python Solution:
+```
 ```
 
 # 6. [Find the first or last occurrence in Array](https://www.codingninjas.com/studio/problems/first-and-last-position-of-an-element-in-sorted-array_1082549?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION)
@@ -252,10 +268,74 @@ def firstAndLastPosition(arr, n, k):
 ## Java Solution:
 ```
 ```
+## Python Solution:
+```
+```
 
 # 8. [Search in Rotated Sorted Array I]()
 
 ## Java Solution:
+```
+import java.util.ArrayList;
+public class Solution {
+    public static int search(ArrayList<Integer> arr, int n, int k) {
+        // Linear search
+        // int index = -1;
+        // for(int i=0; i<n; i++){
+        //     if (arr.get(i)==k){
+        //         index = i;
+        //     }
+        // }
+        // return index;
+
+        // Binary Search
+        
+        int index = 0; // rotationPoint
+        // Search to find lowest element (from where the rotation is starting)
+        int low = 0, high = n-1;
+        while(low<high){
+            int mid = low + (high-low)/2;
+            if (arr.get(mid)>arr.get(high)){
+                low = mid + 1;
+            }
+            else{
+                high = mid;
+            }  
+        }
+        // Search the element before rotationPoint window
+        index = low;
+        low = 0; high = index;
+        while(low<=high){
+            int mid = low + (high-low)/2;
+            if (arr.get(mid)==k){
+                return mid;
+            }
+            else if (arr.get(mid)>k){
+                high = mid - 1;
+            }
+            else{
+                low = mid + 1;
+            }
+        }
+        // Search the element after the rotationPoint window
+        low = index; high = n-1;
+        while(low<=high){
+            int mid = low + (high-low)/2;
+            if (arr.get(mid)==k){
+                return mid;
+            }
+            else if (arr.get(mid)>k){
+                high = mid - 1;
+            }
+            else{
+                low = mid + 1;
+            }
+        }
+        return -1;
+    }
+}
+```
+## Python Solution:
 ```
 ```
 
@@ -264,10 +344,16 @@ def firstAndLastPosition(arr, n, k):
 ## Java Solution:
 ```
 ```
+## Python Solution:
+```
+```
 
 # 10. [Find minimum in Rotated Sorted Array]()
 
 ## Java Solution:
+```
+```
+## Python Solution:
 ```
 ```
 
@@ -276,15 +362,24 @@ def firstAndLastPosition(arr, n, k):
 ## Java Solution:
 ```
 ```
-	
+## Python Solution:
+```
+```
+
 # 12. [Single element in a Sorted Array]()
 
 ## Java Solution:
+```
+```
+## Python Solution:
 ```
 ```
 
 # 13. [Find peak element]()
 
 ## Java Solution:
+```
+```
+## Python Solution:
 ```
 ```
