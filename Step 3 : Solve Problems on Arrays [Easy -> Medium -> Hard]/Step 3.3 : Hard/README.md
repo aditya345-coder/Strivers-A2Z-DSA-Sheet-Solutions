@@ -74,6 +74,47 @@ public class Solution {
 
 ### Solution
 ```Java
+import java.util.HashMap;
+
+public class Solution {
+    public static int getLongestZeroSumSubarrayLength(int []arr){
+        // Brute Force
+        // int mcount = 0;
+        // int n = arr.length;
+        // for(int i=0; i<n; i++){
+        //     int count = 0;
+        //     int sum = 0;
+        //     for(int j=i; j<n; j++){
+        //         sum += arr[j];
+        //         count++;
+        //         if (sum==0){
+        //             mcount = Math.max(count, mcount);
+        //         }
+        //     }
+        // }
+        // return mcount;
+     // Optimized
+      HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        int n = arr.length;
+        int sum = 0;
+        int max = 0;
+        for(int i=0; i<n; i++){
+            sum +=arr[i]; // Adding element to sum
+            if (sum==0){ // if sum is equal to zero
+                max=i+1;
+            }
+            else{
+                if (map.get(sum)!=null){
+                    max = Math.max(max, i-map.get(sum));
+                }
+                else{
+                    map.put(sum, i);
+                }
+            }
+        }
+        return max;
+    }
+}
 ```
 
 # 6. [Subarrays with XOR ‘K’](https://www.codingninjas.com/studio/problems/subarrays-with-xor-k_6826258?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
@@ -95,6 +136,45 @@ public class Solution {
 
 ### Solution
 ```Java
+import java.util.*;
+public class Solution {
+    public static int[] findMissingRepeatingNumbers(int []a) {
+        // int n = a.length;
+        // int [] res = new int [2]; // For storing missing and repeat numbers
+        // for(int i=1; i<=n; i++){ // loop for finding the missing and repeat numbers
+        //      int count = 0; // Count occurance of each element
+        //     for(int j=0; j<n; j++){ // Loop through array
+        //         if (a[j]==i){
+        //             count++; 
+        //         }
+        //     }
+        //     if (count==2){ // For reapting numbers
+        //         res[0] = i;
+        //     }
+        //     else if (count==0){ // For missing numbers
+        //         res[1] = i;
+        //     }
+        // }
+
+        // Optimized
+        int n = a.length;
+        int count = 0; // Count occurance of each element
+        int [] res = new int[2];
+        int [] hash = new int[n+1];
+        for(int i=0; i<n; i++){
+            hash[a[i]]++;
+        }
+        for(int i=1; i<=n; i++){
+            if (hash[i] == 2){
+                res[0] = i;
+            }
+            else if (hash[i]==0){
+                res[1] = i;
+            }
+        }
+        return res;
+    }
+}
 ```
 # 10. [Number of Inversions](https://www.codingninjas.com/studio/problems/number-of-inversions_6840276?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
