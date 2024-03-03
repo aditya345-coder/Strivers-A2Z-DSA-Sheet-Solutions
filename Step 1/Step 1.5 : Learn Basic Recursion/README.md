@@ -1,10 +1,10 @@
 # 1. [1 to N Without Loop]()
 
-## Java Solution: []
+## Java Solution:
 ```Java
 ```
 
-## Python Solution: []
+## Python Solution:
 ```Python
 from typing import List
 
