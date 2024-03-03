@@ -16,6 +16,12 @@ def array(x):
 def printNos(x: int) -> List[int]: 
     return array(x)
 ```
+```javascript I'm A tab
+console.log('Code Tab A');
+```
+```javascript I'm tab B
+console.log('Code Tab B');
+```
 
 # 2. []()
 
