@@ -189,7 +189,47 @@ public class Solution {
 } 
 	return arr;
 }
+// Time Complexity: O(), Space Complexity: O()
 ```
+
+## Alternate Solution:
+```Java
+class Solution {
+    public void moveZeroes(int[] nums) {
+       int temp = 0;
+       for(int i=0; i<nums.length; i++){
+            for(int j=i+1; j<nums.length; j++){
+                if (nums[j]!=0 && nums[i]==0){
+                    nums[i]=nums[j];
+                    nums[j]=0;
+                    break;
+                }
+            }
+       }
+    }
+}
+// Time Complexity: O(), Space Complexity: O()
+```
+
+## Alternate Solution:
+```Java
+// 2 Pointer Approach
+class Solution {
+    public void moveZeroes(int[] nums) {
+       int j = 0;
+       for(int i=0; i<nums.length; i++){
+            if (nums[i]!=0){
+                int temp=nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;
+                j++;
+            }
+       }
+    }
+}
+// Time Complexity: O(), Space Complexity: O()
+```
+
 ## Python Solution
 ```Python
 def moveZeros(n: int,  a: [int]) -> [int]:
@@ -198,6 +238,7 @@ def moveZeros(n: int,  a: [int]) -> [int]:
         a.remove(0)
         a.append(0)
     return a
+// Time Complexity: O(), Space Complexity: O()
 ```
 # 8. [Linear Search](https://www.codingninjas.com/studio/problems/linear-search_6922070?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
@@ -261,12 +302,16 @@ public class Solution {
          
     }
 }
+
+// Time Complexity: O(), Space Complexity: O()
 ```
 ## Python Solution
 ```Python
 def sortedArray(a: [int], b: [int]) -> [int]:
     u = list(set(a).union(set(b)))
     return sorted(u)
+
+// Time Complexity: O(), Space Complexity: O()
 ```
 # 10. [Missing Number](https://www.codingninjas.com/studio/problems/missing-number_6680467?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTab=1)
 
@@ -296,11 +341,15 @@ class Solution:
         for i in range(len(nums)+1):
             if (i not in nums):
                 return i
+
+// Time Complexity: O(), Space Complexity: O()
 ```
 # 11. [Traffic](https://www.codingninjas.com/studio/problems/traffic_6682625?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ## Java Solution
 ```Java
+
+// Time Complexity: O(), Space Complexity: O()
 ```
 # 12. [Find The Single Element](https://www.codingninjas.com/studio/problems/find-the-single-element_6680465?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
@@ -342,9 +391,15 @@ public class Solution {
         return mcount;
     }
 }
+
+// Time Complexity: O(), Space Complexity: O()
 ```
 # 14. [Longest Subarray With Sum K](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_5713505?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-## Java Solution
+## Java Solution:
+```Java
+
+// Time Complexity: O(), Space Complexity: O()
+```
 ```Java
 ```
