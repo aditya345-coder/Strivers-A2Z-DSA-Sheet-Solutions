@@ -73,10 +73,36 @@ public class Solution {
 ```
 ```
 
-# 3. [Implement Upper Bound](https://www.codingninjas.com/studio/problems/implement-upper-bound_8165383?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 3. [Implement Upper Bound]([https://www.codingninjas.com/studio/problems/implement-upper-bound_8165383?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf](https://www.geeksforgeeks.org/problems/ceil-the-floor2802/1))
 
 ## Java Solution:
 ```
+class Solve {
+    Pair getFloorAndCeil(int[] arr, int n, int x) {
+        int low=0, high=arr.length-1;
+        int floor=-1, ceil=-1;
+        Arrays.sort(arr);
+        while(low<=high){
+            int mid = low + (high-low)/2;
+            if (arr[mid]>x){
+                high=mid-1;
+                ceil = arr[mid];
+            }
+            else if (arr[mid]<x){
+                low=mid+1;
+                floor = arr[mid];
+            }
+            else{
+                floor=arr[mid];
+                ceil=arr[mid];
+                break;
+            }
+            
+        }
+        return new Pair(floor, ceil);
+    }
+}
+
 ```
 ## Python Solution:
 ```
