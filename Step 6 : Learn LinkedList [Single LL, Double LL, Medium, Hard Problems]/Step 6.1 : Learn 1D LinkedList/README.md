@@ -19,71 +19,109 @@ public class Solution {
 // Time Complexity: O(N), Space Complexity: O(N)
 ```
 
-# 2. [ Insert Node At The Beginning](https://www.codingninjas.com/studio/problems/insert-node-at-the-beginning_8144739?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+# 2. [ Insert Node At The Beginning](https://www.geeksforgeeks.org/problems/linked-list-insertion-1587115620/0)
 ## Java Solution
 ```Java
-public class Solution
+class Solution
 {
-    public static Node insertAtFirst(Node list, int newValue) {
-        // Make a node using 'newValue'
-        Node new_node = new Node(newValue);
-        // Assign 'list' to the next of 'new_node'
-        new_node.next = list;
-        return new_node;
+    //Function to insert a node at the beginning of the linked list.
+    Node insertAtBeginning(Node head, int x)
+    {
+        Node newNode = new Node(x);
+        if (head==null){
+            head=newNode;
+            return head;
+        }
+        newNode.next = head;
+        head=newNode;
+        return head;
+    }
+    
+    //Function to insert a node at the end of the linked list.
+    Node insertAtEnd(Node head, int x)
+    {
+        Node newNode = new Node(x);
+        if (head==null){
+            head=newNode;
+            return head;
+        }
+        Node tail = head;
+        while(tail.next!=null){
+            tail = tail.next;
+        }
+        tail.next = newNode;
+        return head;
     }
 }
 // Time Complexity: O(1), Space Complexity: O(1)
 ```
 
-# 3 [Delete Node Of Linked List](https://www.codingninjas.com/studio/problems/delete-node-of-linked-list_8160463?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+# 3 [Delete Node Of Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/)
 ## Java Solution
 ```Java
-public class Solution {
-    public static Node deleteLast(Node list){
-        // Creating a dummy node 'head', and assigning it to 'list'
-        Node head = list;
-        // Getting second last element
-        while (head.next != null && head.next.next != null){
-            head = head.next;
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public void deleteNode(ListNode node) {
+        ListNode temp = node;
+        while(temp.next!=null)
+        {
+            temp.val = temp.next.val;
+            if (temp.next.next==null){
+                temp.next=null;
+            }else{
+                temp=temp.next;
+            }
         }
-
-        // Assigning the 'next' of second last node 'NULL'.
-        head.next = null;
-        return list;
     }
 }
 // Time Complexity: O(N), Space Complexity: O(1)
 ```
 
-# 4. [Count nodes of linked list](https://www.codingninjas.com/studio/problems/count-nodes-of-linked-list_5884?utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Linkedlistseries&leftPanelTabValue=PROBLEM)
+# 4. [Count nodes of linked list](https://www.geeksforgeeks.org/problems/count-nodes-of-linked-list/0)
 ## Java Solution
 ```Java
-public class Solution {
-    public static int length(Node head){
-        Node temp = head; // Create a temporary pointer
-        int size = 0;
-        while(temp!=null){ // loop until temp is null
-            temp = temp.next;
-            size+=1; // Increment size
+class Solution
+{
+    //Function to count nodes of a linked list.
+    public static int getCount(Node head)
+    {
+        int size=0;
+        while(head!=null){
+            size++;
+            head=head.next;
         }
         return size;
     }
 }
 ```
 
-# 5. [Search in a Linked List](https://www.codingninjas.com/studio/problems/search-in-a-linked-list_975381?utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Linkedlistseries&leftPanelTabValue=PROBLEM)
+# 5. [Search in a Linked List](https://www.geeksforgeeks.org/problems/search-in-linked-list-1664434326/1)
 ## Java Solution
 ```Java
-public class Solution{
-    public static int searchInLinkedList(Node head, int k){
-        Node temp = head; // Create temporary pointer
-        while(temp!=null){ // loop until temp is null
-            if (temp.data == k){ // if found
-                return 1;
+/* Node of a linked list
+  class Node {
+   int data;
+    Node next;
+    Node(int d)  { data = d;  next = null; }
+}
+*/
+class Solution {
+    static boolean searchKey(int n, Node head, int key) {
+        while(head.next!=null){
+            if (head.data == key){
+                return true;
             }
-            temp = temp.next;
+            head=head.next;
         }
-        return 0;
+        return false;
     }
+}
 // Time Complexity: O(N), Space Complexity: O(1)
 ```
