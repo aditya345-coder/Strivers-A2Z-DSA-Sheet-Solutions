@@ -19,57 +19,86 @@ public class Solution{
 // Time complexity: O(), Space complexity: O()
 ```
 
-# 2. [Insert at end of Doubly Linked List](https://www.codingninjas.com/studio/problems/insert-at-end-of-doubly-linked-list_8160464?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+# 2. [Insert at end of Doubly Linked List](https://www.geeksforgeeks.org/problems/insert-a-node-in-doubly-linked-list/1)
 
 ### Solution
 ```Java
-public class Solution
+class Node
 {
-    public static Node insertAtTail(Node list, int K) {
-        Node node = new Node(K); // Create a new node
-        node.next = null; // Set node next address null as we are inserting at end
-        if (list == null){ // If there is no node
-            node.prev = null;   
-            list = node; // Update head
-            return list;
-        }
-        // Loop till last element
-        Node temp = list; 
-        while(temp.next!=null){
-            temp = temp.next;
-        }
-        // Set address of node's prev and next
-        node.prev = temp;
-        temp.next = node;
-        return list;   
-    }
+	int data;
+	Node next;
+	Node prev;
+	Node(int data)
+	{
+	    this.data = data;
+	    next = prev = null;
+	}
+}*/
+
+class GfG
+{
+    //Function to insert a new node at given position in doubly linked list.
+    void addNode(Node head_ref, int pos, int data)
+	{
+	    Node newNode = new Node(data);
+	    Node temp=head_ref;
+	    for(int i=0; i<pos; i++){
+    	      temp=temp.next;
+	    }
+	    newNode.prev=temp;
+	    newNode.next=temp.next;
+	    temp.next=newNode;
+	}
 }
 // Time complexity: O(), Space complexity: O()
 ```
 
-# 3. [Delete Last Node of a Doubly Linked List](https://www.codingninjas.com/studio/problems/delete-last-node-of-a-doubly-linked-list_8160469?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+# 3. [Delete Last Node of a Doubly Linked List](https://www.geeksforgeeks.org/problems/delete-node-in-doubly-linked-list/1)
 
 ### Solution
 ```Java
-public class Solution{
-    public static Node deleteLastNode(Node head) {
-        // If there is only one node
-        if (head.next==null){
-            head = null;
+/*
+Definition for doubly Link List Node
+class Node
+{
+    int data;
+    Node next;
+    Node prev;
+    Node(int x){
+        data = x;
+        next = null;
+        prev = null;
+    }
+}
+*/
+
+class Solution {
+    public Node deleteNode(Node head, int x) {
+        // for first element to delete
+        if (x==1){
+            head=head.next;
             return head;
         }
-        Node temp = head;
-        // Traversing to the last node
-        while(temp.next!=null && temp.next.next!=null){
-            temp = temp.next;
+        
+        Node temp=head;
+        for(int i=1; i<x; i++){
+            temp=temp.next;
         }
-        // remove last node
-        temp.next.prev = null; 
-        temp.next = null;
-        temp.prev = null;
+        // for last element to delete
+        if (temp.next==null){
+            temp.prev.next=null;
+            return head;
+        }
+        // delete element except first and last position
+        temp.prev.next=temp.next;
+        if (temp.next!=null)
+            temp.next.prev=temp.prev;
+        temp.prev=null;
+        temp.next=null;
         return head;
     }
 }
+
 // Time complexity: O(n), Space complexity: O(1)
 ```
 
@@ -95,5 +124,45 @@ public class Solution{
         }
         return head;
     }
+}
+```
+
+## Alternate Solution:
+```Java
+/*
+class Node
+{
+    int data;
+    Node next, prev;
+    Node(int data)
+    {
+        this.data = data;
+        this.next = null;
+        this.prev = null;
+    }
+}
+
+*/
+public static Node reverseDLL(Node  head)
+{
+    Node front=head;
+    Node rear=head;
+    int size=0;
+    while(rear.next!=null){
+        size++;
+        rear=rear.next;
+    }
+    /* swap data front and rear for all nodes of
+         doubly linked list */
+    for(int i=0; i<=(size/2); i++){
+        int temp=front.data;
+        front.data=rear.data;
+        rear.data=temp;
+
+        // Updating front and rear
+        front=front.next;
+        rear=rear.prev;
+    }
+    return head;
 }
 ```
