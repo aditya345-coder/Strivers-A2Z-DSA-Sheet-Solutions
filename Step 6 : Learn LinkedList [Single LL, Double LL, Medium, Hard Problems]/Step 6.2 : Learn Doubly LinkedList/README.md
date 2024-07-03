@@ -23,6 +23,7 @@ public class Solution{
 
 ### Solution
 ```Java
+/*
 class Node
 {
 	int data;
