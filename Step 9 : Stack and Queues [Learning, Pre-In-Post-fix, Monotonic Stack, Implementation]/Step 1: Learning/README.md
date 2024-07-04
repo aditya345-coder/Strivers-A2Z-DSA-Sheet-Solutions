@@ -1,0 +1,142 @@
+# 1. [Implement Stack using Arrays]()
+
+## Solution:
+```Java
+```
+
+# 2. []()
+
+## Solution:
+```Java
+```
+
+# 3. []()
+
+## Solution:
+```Java
+```
+
+# 4. []()
+
+## Solution:
+```Java
+```
+
+# 5. [Implement stack using Linkedlist]()
+
+## Solution:
+```Java
+class MyStack 
+{
+    // class StackNode {
+    //     int data;
+    //     StackNode next;
+    //     StackNode(int a) {
+    //         data = a;
+    //         next = null;
+    //     }
+    // }   
+    StackNode top;
+    
+    //Function to push an integer into the stack.
+    void push(int a) 
+    {
+        StackNode sNode = new StackNode(a);
+        if (top==null){
+            top=sNode;
+            return;
+        }
+        sNode.next=top;
+        top=sNode;
+        
+    }
+
+    //Function to remove an item from top of the stack.
+    int pop() 
+    {
+        if (top==null){
+            return -1;
+        }
+        int data = top.data;
+        top=top.next;
+        return data;
+    }
+}
+```
+
+# 6. []()
+
+## Solution:
+```Java
+```
+
+# 7. [Check for balanced paranthesis](https://leetcode.com/problems/valid-parentheses/description/)
+
+## Solution:
+```Java
+class Solution {
+    public boolean isValid(String s) {
+        HashMap<Character, Character> map = new HashMap<>();
+        map.put('(', ')');
+        map.put('[', ']');
+        map.put('{', '}');
+        Stack<Character> stack = new Stack<Character>();
+        char [] str = s.toCharArray();
+        for(int i=0; i<str.length; i++){
+            if (map.containsKey(str[i])){
+                stack.push(str[i]);
+            }
+            else{
+                if (stack.isEmpty()){
+                    return false;
+                }
+                char openingBracket=stack.pop();
+                char closingBracket=map.get(openingBracket);
+                if (closingBracket!=str[i]){
+                    return false;
+                }
+            }
+        }
+        return stack.isEmpty();
+    }
+}
+```
+
+## Alternate Solution:
+```Java
+class Solution {
+    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack<Character>();
+        char [] str = s.toCharArray();
+        if (str.length==1){
+            return false;
+        }
+        for(int i=0; i<str.length; i++){
+            if (str[i]=='(' || str[i]=='[' || str[i]=='{'){
+                stack.push(str[i]);
+            }
+            else if (!stack.isEmpty() && (str[i]==')' || str[i]==']' || str[i]=='}')){
+                if ((stack.peek()=='(' && str[i]==')') || (stack.peek()=='[' && str[i]==']') || (stack.peek()=='{' && str[i]=='}')){
+                    stack.pop();
+                }
+                else{
+                    return false;
+                }
+            }
+            else{
+                return false;
+            }
+        }
+        if (stack.size()==0){
+            return true;
+        }
+        return false;
+    }
+}
+```
+
+# 8. []()
+
+## Solution:
+```Java
+```
