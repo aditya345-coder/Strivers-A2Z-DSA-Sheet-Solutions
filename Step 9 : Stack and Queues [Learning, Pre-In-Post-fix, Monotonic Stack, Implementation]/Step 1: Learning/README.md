@@ -138,8 +138,30 @@ class Solution {
 }
 ```
 
-# 8. []()
+# 8. [Implement Min Stack](https://leetcode.com/problems/min-stack/description/)
 
 ## Solution:
 ```Java
+class MinStack {
+    ArrayList<Integer> stack;
+    public MinStack() {
+        stack = new ArrayList<>(); 
+    }
+    
+    public void push(int val) {
+        stack.add(val);
+    }
+    
+    public void pop() {
+        stack.remove(stack.size()-1);
+    }
+    
+    public int top() {
+        return stack.get(stack.size()-1);
+    }
+    
+    public int getMin() {
+        return Collections.min(stack);
+    }
+}
 ```
