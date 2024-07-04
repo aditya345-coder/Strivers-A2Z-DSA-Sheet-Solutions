@@ -83,10 +83,13 @@ class Solution {
         Stack<Character> stack = new Stack<Character>();
         char [] str = s.toCharArray();
         for(int i=0; i<str.length; i++){
+            // When you encounter an opening bracket, push it to the top of the stack.
             if (map.containsKey(str[i])){
                 stack.push(str[i]);
             }
             else{
+                // When you encounter a closing bracket, check if the top of the stack was the opening for it. 
+                // If yes, pop it from the stack. Otherwise, return false.
                 if (stack.isEmpty()){
                     return false;
                 }
