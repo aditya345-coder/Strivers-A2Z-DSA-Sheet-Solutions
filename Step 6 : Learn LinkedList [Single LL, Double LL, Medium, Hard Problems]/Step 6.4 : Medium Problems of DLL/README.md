@@ -76,7 +76,7 @@ class Solution {
 }
 ```
 
-# [Find pairs with given sum in DLL] (https://www.geeksforgeeks.org/problems/find-pairs-with-given-sum-in-doubly-linked-list/1)
+# [Find pairs with given sum in DLL](https://www.geeksforgeeks.org/problems/find-pairs-with-given-sum-in-doubly-linked-list/1)
 
 ## Solution:
 ```Java
