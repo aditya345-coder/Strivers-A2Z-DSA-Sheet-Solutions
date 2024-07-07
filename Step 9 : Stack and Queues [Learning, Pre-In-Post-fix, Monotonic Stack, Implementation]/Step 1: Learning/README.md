@@ -1,4 +1,4 @@
-# 1. [Implement Stack using Arrays]()
+# 1. [Implement Stack using Arrays](https://www.geeksforgeeks.org/problems/implement-stack-using-array/1)
 
 ## Solution:
 ```Java
@@ -31,10 +31,47 @@ class MyStack {
 }
 ```
 
-# 2. []()
+# 2. [Implement Queue using Arrays](https://www.geeksforgeeks.org/problems/implement-queue-using-array/1)
 
 ## Solution:
 ```Java
+class MyQueue {
+
+    int front, rear;
+	int arr[] = new int[100005];
+
+    MyQueue()
+	{
+		front=0;
+		rear=0;
+	}
+	
+	//Function to push an element x in a queue.
+	void push(int x)
+	{
+	    if (rear>=100005){
+	        return;
+	    }
+	    if (rear==arr.length && front!=0){
+	        rear=0;
+	    }
+	    arr[rear]=x;
+	    rear++;
+	} 
+
+    //Function to pop an element from queue and return that element.
+	int pop()
+	{
+	    if (front==rear){
+	        return -1;
+	    }
+	    
+	    int deleteElement=arr[front];
+
+		front++;
+		return deleteElement;
+	} 
+}
 ```
 
 # 3. []()
@@ -49,7 +86,7 @@ class MyStack {
 ```Java
 ```
 
-# 5. [Implement stack using Linkedlist]()
+# 5. [Implement stack using Linkedlist](https://www.geeksforgeeks.org/problems/implement-stack-using-linked-list/1)
 
 ## Solution:
 ```Java
