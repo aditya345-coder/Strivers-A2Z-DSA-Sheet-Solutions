@@ -128,10 +128,39 @@ class MyStack
 }
 ```
 
-# 6. []()
+# 6. [Implement queue using Linkedlist](https://www.geeksforgeeks.org/problems/implement-queue-using-linked-list/1)
 
 ## Solution:
 ```Java
+class MyQueue
+{
+    QueueNode front, rear, temp;
+    
+    //Function to push an element into the queue.
+	void push(int a)
+	{
+	    QueueNode tempNode = new QueueNode(a);
+	    if (front==null){
+	        front=rear=tempNode;
+	        return;
+	    }
+	    else{
+	        rear.next=tempNode;
+	        rear=tempNode;
+	    }
+	}
+	
+    //Function to pop front element from the queue.
+	int pop()
+	{
+        if (front==null){
+            return -1;
+        }
+        int deleteElement=front.data;
+        front=front.next;
+        return deleteElement;
+	}
+}
 ```
 
 # 7. [Check for balanced paranthesis](https://leetcode.com/problems/valid-parentheses/description/)
