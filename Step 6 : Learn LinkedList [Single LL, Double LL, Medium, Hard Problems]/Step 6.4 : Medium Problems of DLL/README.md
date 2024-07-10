@@ -107,8 +107,26 @@ class Solution {
 }
 ```
 
-# [Remove duplicates from sorted DLL] ()
+# [Remove duplicates from sorted DLL] (https://www.geeksforgeeks.org/problems/remove-duplicates-from-a-sorted-doubly-linked-list/1)
 
 ## Solution:
 ```Java
+class Solution{
+    Node removeDuplicates(Node head){
+        Node current=head;
+        Node temp=null;
+        while(current.next!=null){
+            if (current.data==current.next.data){
+                temp = current.next.next; // to store the deleted element address
+                current.next= temp;
+                if (current.next!=null)
+                    temp.prev=current;
+            }
+            else{
+                current=current.next;
+            }
+        }
+        return head;
+    }
+}
 ```
