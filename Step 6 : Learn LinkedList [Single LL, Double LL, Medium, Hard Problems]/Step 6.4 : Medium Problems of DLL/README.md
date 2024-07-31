@@ -107,7 +107,7 @@ class Solution {
 }
 ```
 
-# [Remove duplicates from sorted DLL] (https://www.geeksforgeeks.org/problems/remove-duplicates-from-a-sorted-doubly-linked-list/1)
+# [Remove duplicates from sorted DLL](https://www.geeksforgeeks.org/problems/remove-duplicates-from-a-sorted-doubly-linked-list/1)
 
 ## Solution:
 ```Java
