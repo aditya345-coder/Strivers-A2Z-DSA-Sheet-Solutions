@@ -1,6 +1,6 @@
 # 1. [Middle Of Linked List](https://www.codingninjas.com/studio/problems/middle-of-linked-list_973250?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-### Solution
+### Solution: Time Complexity: O() Space Complexity: O()
 ```Java
 public class Solution{
     public static Node findMiddle(Node head){
@@ -19,88 +19,114 @@ public class Solution{
     }
 }
 ```
-# 2. []()
+# 2. [Reverse a LinkedList [Iterative]]()
 
-### Solution
+### Solution: Time Complexity: O() Space Complexity: O()
 ```Java
 ```
 
-# 3. []()
+# 3. [Reverse a LL [Recursive]]()
 
-### Solution
+### Solution: Time Complexity: O() Space Complexity: O()
 ```Java
 ```
 
-# 4. []()
+# 4. [Detect a loop in LL]()
 
-### Solution
+### Solution: Time Complexity: O() Space Complexity: O()
 ```Java
 ```
 
-# 5. []()
+# 5. [Find the starting point in LL]()
 
-### Solution
+### Solution: Time Complexity: O() Space Complexity: O()
 ```Java
 ```
 
-# 6. []()
+# 6. [Length of Loop in LL]()
 
-### Solution
+### Solution: Time Complexity: O() Space Complexity: O()
 ```Java
 ```
 
-# 7. []()
+# 7. [Check if LL is palindrome or not]()
 
-### Solution
+### Solution: Time Complexity: O() Space Complexity: O()
 ```Java
 ```
 
-# 8. []()
+# 8. [Segrregate odd and even nodes in LL]()
 
-### Solution
+### Solution: Time Complexity: O() Space Complexity: O()
 ```Java
 ```
 
-# 9. []()
+# 9. [Remove Nth node from the back of the LL]()
 
-### Solution
+### Solution: Time Complexity: O() Space Complexity: O()
 ```Java
 ```
 
-# 10. []()
+# 10. [Delete the middle node of LL]()
 
-### Solution
+### Solution: Time Complexity: O() Space Complexity: O()
 ```Java
 ```
 
-# 11. []()
+# 11. [Sort LL]()
 
-### Solution
+### Solution: Time Complexity: O() Space Complexity: O()
 ```Java
 ```
 
-# 12. []()
+# 12. [Sort a LL of 0's 1's and 2's by changing links]()
 
-### Solution
+### Solution: Time Complexity: O() Space Complexity: O()
 ```Java
 ```
 
-# 13. []()
+# 13. [Find the intersection point of Y LL]()
 
-### Solution
+### Solution: Time Complexity: O() Space Complexity: O()
 ```Java
 ```
 
-# 14. []()
+# 14. [Add 1 to a number represented by LL]()
 
-### Solution
+### Solution: Time Complexity: O() Space Complexity: O()
 ```Java
 ```
 
-# 15. []()
+# 15. [Add 2 numbers in LL](https://leetcode.com/problems/add-two-numbers/description/)
 
-### Solution
+### Solution: Time Complexity: O() Space Complexity: O()
 ```Java
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode head1 = l1;
+        ListNode head2 = l2;
+        ListNode result = new ListNode();
+        ListNode head=result;
+        int carry = 0;
+        while(head1!=null || head2!=null || carry!=0){
+            int sum=0;
+            sum = head1!=null?head1.val:0;
+            sum += head2!=null?head2.val:0;
+            sum = sum+carry;
+            carry = sum/10;
+            result.next= new ListNode(sum%10);
+            result=result.next;    
+            if (head1!=null){
+                head1=head1.next;
+            }
+            if (head2!=null){
+                head2=head2.next;
+            }
+        }
+        return head.next;
+    }
+}
 ```
+
 
 
