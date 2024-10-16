@@ -1,4 +1,4 @@
-# 1. [Largest Element in the Array ](https://www.codingninjas.com/studio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+# 1. [Largest Element in the Array ](https://www.geeksforgeeks.org/problems/largest-element-in-array4009/0?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=largest-element-in-array)
 
 ## Java Solution
 ```Java
@@ -19,7 +19,21 @@ public class Solution {
 // Time Complexity: O(n), Space Complexity: O(1)
 ```
 
-# 2. [Ninja And The Second Order Elements ](https://www.codingninjas.com/studio/problems/ninja-and-the-second-order-elements_6581960?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=1)
+## Python Solution
+```Python
+from typing import List
+
+class Solution:
+    def largest(self, arr : List[int]) -> int:
+        maximum=0
+        for i in range(len(arr)):
+            if (maximum<arr[i]):
+                maximum=arr[i]
+        return maximum
+
+# Time Complexity: O(n), Space Complexity: O(1)
+```
+# 2. [Ninja And The Second Order Elements ](https://www.geeksforgeeks.org/problems/second-largest3735/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=second-largest)
 
 ## Java Solution
 ```Java
@@ -42,6 +56,7 @@ public class Solution {
 }
 // Time Complexity: O(n^2), Space Complexity: O(1)
 ```
+
 ## Java Solution (Method 2)
 ```Java
 import java.util.*;
@@ -71,9 +86,25 @@ public class Solution {
 }
 // Time complexity: O(N), Space complexity: O(1)
 ```
-# 3. [Ninja And The Sorted Check](https://www.codingninjas.com/studio/problems/ninja-and-the-sorted-check_6581957?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
-## Java Solution
+## Python Solution
+```Python
+class Solution:
+    def getSecondLargest(self, arr):
+        largest=max(arr)  # O(n)
+        second_largest = -1
+        for i in range(len(arr)):  # O(n)
+            if (second_largest<arr[i] and arr[i]<largest):
+                second_largest=arr[i]
+        return second_largest
+
+# Time Complexity: O(n), Space Complexity: O(1)
+```
+
+# 3. [Ninja And The Sorted Check](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/)
+
+## Java Solution - ([Coding Ninja](https://www.codingninjas.com/studio/problems/ninja-and-the-sorted-check_6581957?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+)
 ```Java
 import java.util.*;
 public class Solution {
@@ -91,9 +122,13 @@ public class Solution {
 }
 // Time Complexity: O(nlogn), Space Complexity: O(1)
 ```
-# 4. [Remove Duplicates from Sorted Array](https://www.codingninjas.com/studio/problems/remove-duplicates-from-sorted-array_1102307?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
 
-## Java Solution
+## Python
+```Python
+```
+# 4. [Remove Duplicates from Sorted Array]
+
+## Java Solution - [Coding Ninja](https://www.codingninjas.com/studio/problems/remove-duplicates-from-sorted-array_1102307?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
 ```Java
 import java.util.ArrayList;
 
@@ -112,15 +147,48 @@ public class Solution {
 	}
 }
 ```
+
 ## Python Solution
 ```Python
 def removeDuplicates(arr,n):
     return len(set(arr))
 ```
 
-# 5. [Left Rotate an Array by One](https://www.codingninjas.com/studio/problems/left-rotate-an-array-by-one_5026278?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+## Alternate Solution
+```Python
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        new_nums=[]
+        for ele in nums:
+            if (ele not in new_nums):
+                new_nums.append(ele)
+        
+        for i in range(len(new_nums)):
+            nums[i]=new_nums[i]
 
-## Java Solution
+        return len(new_nums)
+
+# Time Complexity: O(n) Space Complexity: O()
+```
+
+## Alternate Solution:
+```Python
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        writer=0
+        for reader in range(len(nums)):
+            if (nums[reader]!=nums[writer]):
+                writer+=1
+            nums[writer]=nums[reader]
+        
+        return writer+1
+
+Time Complexity: O(n)  Space Complexity: O(1)
+```
+
+# 5. [Left Rotate an Array by One]
+
+## Java Solution - [Coding Ninja](https://www.codingninjas.com/studio/problems/left-rotate-an-array-by-one_5026278?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 ```Java
 import java.util.* ;
 import java.io.*; 
@@ -138,9 +206,13 @@ public class Solution {
 // Time Complexity: O(n), Space Complexity: O(1)
 ```
 
-# 6. [Rotate array](https://www.codingninjas.com/studio/problems/rotate-array_1230543?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+## Python
+```Python
+```
 
-## Java Solution
+# 6. [Rotate array]
+
+## Java Solution - [Coding Ninja](https://www.codingninjas.com/studio/problems/rotate-array_1230543?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 ```Java
 import java.util.* ;
 import java.io.*; 
@@ -172,24 +244,29 @@ class Solution {
 }
 // Time Complexity: O(n*k), Space Complexity: O(n)
 ```
-# 7. [Move Zero's to End](https://www.codingninjas.com/studio/problems/ninja-and-the-zero-s_6581958?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-## Java Solution
+## Python
+```Python
+```
+
+# 7. [Move Zero's to End]
+
+## Java Solution - [Coding Ninja](https://www.codingninjas.com/studio/problems/ninja-and-the-zero-s_6581958?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 ```Java
 public class Solution {
-	public static int[] moveZeros(int n, int []a) {
+    public static int[] moveZeros(int n, int []a) {
 	int count=0;
 	int [] arr = new int[n];
 	int j=0;
 	for(int i=0; i<n; i++){
-	if(a[i]!=0){
+	    if(a[i]!=0){
 		arr[j]=a[i];
 		j++;
-	}
-} 
+	    }
+        } 
 	return arr;
 }
-// Time Complexity: O(), Space Complexity: O()
+// Time Complexity: O(n), Space Complexity: O(n)
 ```
 
 ## Alternate Solution:
@@ -208,7 +285,7 @@ class Solution {
        }
     }
 }
-// Time Complexity: O(), Space Complexity: O()
+// Time Complexity: O(n^2), Space Complexity: O(1)
 ```
 
 ## Alternate Solution:
@@ -227,9 +304,29 @@ class Solution {
        }
     }
 }
-// Time Complexity: O(), Space Complexity: O()
+// Time Complexity: O(n), Space Complexity: O(1)
 ```
 
+## Python Solution
+```Python
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        new_nums=[0]*len(nums)
+        j=0
+        for i in range(len(nums)):
+            if nums[i]!=0:
+                n=nums[i]
+                new_nums[j]=n
+                j+=1
+        
+        for i in range(len(new_nums)):
+            nums[i]=new_nums[i]
+
+# Time Complexity: O(n), Space Complexity: O(n)
+```
 ## Python Solution
 ```Python
 def moveZeros(n: int,  a: [int]) -> [int]:
@@ -238,11 +335,30 @@ def moveZeros(n: int,  a: [int]) -> [int]:
         a.remove(0)
         a.append(0)
     return a
-// Time Complexity: O(), Space Complexity: O()
-```
-# 8. [Linear Search](https://www.codingninjas.com/studio/problems/linear-search_6922070?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
-## Java Solution
+# Time Complexity: O(n), Space Complexity: O(1)
+```
+
+## Python
+```Python
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        # 2 Pointer approach
+        left=0
+        for right in range(len(nums)):
+            if (nums[right]!=0):
+                nums[left], nums[right]=nums[right], nums[left]
+                left+=1
+
+# Time Complexity: O(n), Space Complexity: O(1)
+```
+
+# 8. [Linear Search]
+
+## Java Solution - [Coding Ninja](https://www.codingninjas.com/studio/problems/linear-search_6922070?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 ```Java
 import java.util.*;
 public class Solution {
@@ -258,9 +374,13 @@ public class Solution {
 // Time Complexity: O(n), Space Complexity: O(1)
 ```
 
-# 9. [Merge 2 Sorted Array](https://www.codingninjas.com/studio/problems/sorted-array_6613259?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+## Python
+```Python
+```
 
-## Java Solution
+# 9. [Merge 2 Sorted Array]
+
+## Java Solution - [Coding Ninja](https://www.codingninjas.com/studio/problems/sorted-array_6613259?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 ```Java
 import java.util.*;
 public class Solution {
@@ -305,17 +425,42 @@ public class Solution {
 
 // Time Complexity: O(), Space Complexity: O()
 ```
+
+## Python Solution
+```Python
+class Solution:
+    #Function to return a list containing the union of the two arrays.
+    def findUnion(self,arr1,arr2,n,m):
+        '''
+        :param a: given sorted array a
+        :param n: size of sorted array a
+        :param b: given sorted array b
+        :param m: size of sorted array b
+        :return:  The union of both arrays as a list
+        '''
+        # code here 
+        s=set()
+        for i in range(n):
+            s.add(arr1[i])
+        
+        for i in range(m):
+            s.add(arr2[i])
+        
+        return sorted(list(s))
+```
+
 ## Python Solution
 ```Python
 def sortedArray(a: [int], b: [int]) -> [int]:
-    u = list(set(a).union(set(b)))
-    return sorted(u)
+    u = list(set(a).union(set(b))) # O((n + m)
+    return sorted(u) # log(n + m)
 
-// Time Complexity: O(), Space Complexity: O()
+// Time Complexity: O((n + m) log(n + m)) , Space Complexity: O(n + m)
 ```
-# 10. [Missing Number](https://www.codingninjas.com/studio/problems/missing-number_6680467?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTab=1)
 
-## Java Solution
+# 10. [Missing Number]
+
+## Java Solution - [Coding Ninja](https://www.codingninjas.com/studio/problems/missing-number_6680467?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTab=1)
 ```Java
 public class Solution {
     public static int missingNumber(int []a, int N) {
@@ -344,16 +489,22 @@ class Solution:
 
 // Time Complexity: O(), Space Complexity: O()
 ```
-# 11. [Traffic](https://www.codingninjas.com/studio/problems/traffic_6682625?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 11. [Traffic]
 
 ## Java Solution
 ```Java
 
 // Time Complexity: O(), Space Complexity: O()
 ```
-# 12. [Find The Single Element](https://www.codingninjas.com/studio/problems/find-the-single-element_6680465?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
 
-## Java Solution
+## Python
+```Python
+```
+
+# 12. [Find The Single Element]
+
+## Java Solution - [Coding Ninja](https://www.codingninjas.com/studio/problems/find-the-single-element_6680465?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0)
+
 ```Java
 public class Solution {
     public static int getSingleElement(int []arr){
@@ -366,9 +517,22 @@ public class Solution {
 }
 // Time Complexity: O(n), Space Complexity: O(1)
 ```
-# 13. [Longest Subarray With Sum K](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_6682399?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-## Java Solution
+## Python
+```Python
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        xor=0
+        for i in range(len(nums)):
+            xor=xor^nums[i]
+        return xor
+
+# Time Complexity: O(n), Space Complexity: O(1)
+```
+
+# 13. [Longest Subarray With Sum K]
+
+## Java Solution - [Coding Ninja](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_6682399?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 ```Java
 public class Solution {
     public static int longestSubarrayWithSumK(int []a, long k) {
@@ -394,12 +558,22 @@ public class Solution {
 
 // Time Complexity: O(), Space Complexity: O()
 ```
-# 14. [Longest Subarray With Sum K](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_5713505?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+
+## Python
+```Python
+```
+
+# 14. [Longest Subarray With Sum K]
 
 ## Java Solution:
 ```Java
 
 // Time Complexity: O(), Space Complexity: O()
+```
+
+## Python
+```Python
+```
 ```
 ```Java
 ```
