@@ -1,6 +1,6 @@
-# 1. [Binary Search](https://www.codingninjas.com/studio/problems/binary-search_972?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 1. [Binary Search](https://leetcode.com/problems/binary-search/submissions/1423968544/)
 
-## Java Solution:
+## Java Solution: - [Coding Ninja](https://www.codingninjas.com/studio/problems/binary-search_972?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 ```
 public class Solution {
     public static int search(int []nums, int target) {
@@ -28,11 +28,23 @@ public class Solution {
 ```
 ## Python Solution:
 ```
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        low=0; high=len(nums)-1
+        while(low<=high):
+            mid=low+(high-low)//2
+            if (nums[mid]==target):
+                return mid
+            elif (nums[mid]>target):
+                high=mid-1
+            else:
+                low=mid+1
+        return -1
 ```
 
-# 2. [Implement Lower Bound](https://www.codingninjas.com/studio/problems/lower-bound_8165382?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+# 2. [Implement Lower Bound](https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1?track=DSASP-Searching&amp%253BbatchId=154&utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=floor-in-a-sorted-array)
 
-## Java Solution:
+## Java Solution: [Coding Ninja](https://www.codingninjas.com/studio/problems/lower-bound_8165382?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 ```
 public class Solution {
     public static int lowerBound(int []arr, int n, int x) {
@@ -71,6 +83,23 @@ public class Solution {
 ```
 ## Python Solution:
 ```
+class Solution:
+    #User function Template for python3
+    
+    #Complete this function
+    def findFloor(self,A,N,X):
+        low=0; high=len(A)-1; floor=-1
+        while(low<=high):
+            mid = low + (high-low)//2
+            if ((A[mid]<=X) and A[mid]>=floor):
+                low=mid+1
+                floor=mid
+            elif (A[mid]>X):
+                high=mid-1
+                
+        return floor
+
+Time Complexity: O(logn) Space Complexity: O(1)
 ```
 
 # 3. [Implement Upper Bound](https://www.geeksforgeeks.org/problems/ceil-the-floor2802/1)
