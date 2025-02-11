@@ -1,6 +1,6 @@
 # 1. [Introduction To Doubly Linked List](https://www.codingninjas.com/studio/problems/introduction-to-doubly-linked-list_8160413?utm_source=youtube&utm_medium=affiliate&utm_campaign=Codestudio_Linkedlistseries&leftPanelTabValue=PROBLEM)
 
-### Solution
+### Java Solution
 ```Java
 public class Solution{
     public static Node constructDLL(int []arr) {
@@ -17,6 +17,20 @@ public class Solution{
      }
 }
 // Time complexity: O(), Space complexity: O()
+```
+### Python Solution
+```Python
+class Solution:
+    def constructDLL(self, arr):
+        head = Node(arr[0])
+        curr=head
+        curr.prev=None
+        for i in range(1, len(arr)):
+            temp = Node(arr[i])
+            curr.next=temp
+            temp.prev=curr
+            curr=curr.next
+        return head
 ```
 
 # 2. [Insert at end of Doubly Linked List](https://www.geeksforgeeks.org/problems/insert-a-node-in-doubly-linked-list/1)
@@ -52,6 +66,22 @@ class GfG
 	}
 }
 // Time complexity: O(), Space complexity: O()
+```
+
+### Python Solution
+```Python
+class Solution:
+    def addNode(self, head, p, x):
+        node=Node(x)
+        curr=head
+        for i in range(1,p+1):
+                curr=curr.next
+        
+        nxt=curr.next
+        curr.next=node
+        node.prev=curr
+        node.next=nxt
+        return head
 ```
 
 # 3. [Delete Last Node of a Doubly Linked List](https://www.geeksforgeeks.org/problems/delete-node-in-doubly-linked-list/1)
@@ -103,9 +133,28 @@ class Solution {
 // Time complexity: O(n), Space complexity: O(1)
 ```
 
+### Python Solution
+```Python
+class Solution:
+    def delete_node(self, head, x):
+        if (x==1):
+            head=head.next
+            head.prev=None
+            return head
+        temp=head
+        for i in range(2, x):
+            temp=temp.next
+        if (temp.next.next is None):
+            temp.next=None
+        else:
+            temp.next=temp.next.next
+            temp.next.prev=temp
+        return head
+```
+
 # 4. [Reverse A Doubly Linked List](https://www.codingninjas.com/studio/problems/reverse-a-doubly-linked-list_1116098?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-### Solution
+### Java Solution
 ```Java
 public class Solution{
     public static Node reverseDLL(Node head){
@@ -128,7 +177,7 @@ public class Solution{
 }
 ```
 
-## Alternate Solution:
+## Alternate Java Solution:
 ```Java
 /*
 class Node
@@ -166,4 +215,37 @@ public static Node reverseDLL(Node  head)
     }
     return head;
 }
+```
+
+### Python Solution
+```Python
+class Solution:
+    def reverseDLL(self, head):
+        front=head
+        rear=head
+        length=0
+        while(rear.next is not None):
+            rear=rear.next
+            length+=1
+        
+        for index in range((length//2)+1):
+            front.data, rear.data=rear.data, front.data
+            front=front.next
+            rear=rear.prev
+            index+=1
+        
+        return head
+```
+
+## Alternate Python Solution
+```
+class Solution:
+    def reverseDLL(self, head):
+        curr=head
+        while(curr):
+            curr.prev, curr.next=curr.next, curr.prev
+            if not curr.prev:
+                return curr
+            curr=curr.prev
+        return head
 ```
