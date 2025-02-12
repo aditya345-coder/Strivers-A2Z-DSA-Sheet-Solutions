@@ -1,6 +1,6 @@
 # 1. [Middle Of Linked List](https://www.codingninjas.com/studio/problems/middle-of-linked-list_973250?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-### Solution: Time Complexity: O() Space Complexity: O()
+### Java Solution: Time Complexity: O() Space Complexity: O()
 ```Java
 public class Solution{
     public static Node findMiddle(Node head){
@@ -19,10 +19,48 @@ public class Solution{
     }
 }
 ```
+
+### Python Solution: Time Complexity: O() Space Complexity: O()
+```Python
+class Solution:
+    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        curr=head; length=0
+        while(curr is not None):
+            curr=curr.next
+            length+=1
+        
+        temp=head
+        for i in range(0,(length//2)):
+            temp=temp.next
+        
+        return temp
+```
+
+### Alternate Solution
+```Python
+class Solution:
+    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        slow=head; fast=head
+        while fast and fast.next:
+            slow=slow.next
+            fast=fast.next.next
+        
+        return slow
+```
+
 # 2. [Reverse a LinkedList [Iterative]]()
 
 ### Solution: Time Complexity: O() Space Complexity: O()
-```Java
+```Python
+class Solution:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        curr=head; prev=None
+        while(curr is not None):
+            next=curr.next
+            curr.next=prev
+            prev=curr
+            curr=next
+        return prev
 ```
 
 # 3. [Reverse a LL [Recursive]]()
